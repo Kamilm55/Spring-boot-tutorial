@@ -1,9 +1,9 @@
 package com.example.SpringBootTutorial.student;
 
-import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 @Entity // for hibernate
 @Table
@@ -14,26 +14,25 @@ public class Student {
     private long id;
     @Column(nullable = false) // This column does not allow null values
     private String name;
+    @Column(nullable = false)
     private String email;
     @Column(nullable = false)
     private LocalDate birth_of_date;
-    @Column(nullable = false)
+    @Transient // it does not store in database , when we need we calculate value of it in getAge();
     private int age;
 
     public Student() {}
-    public Student(String name, String email, LocalDate birth_of_date, int age) {
+    public Student(String name, String email, LocalDate birth_of_date) {
         this.name = name;
         this.email = email;
         this.birth_of_date = birth_of_date;
-        this.age = age;
     }
 
-    public Student(long id, String name, String email, LocalDate birth_of_date, int age) {
+    public Student(long id, String name, String email, LocalDate birth_of_date) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.birth_of_date = birth_of_date;
-        this.age = age;
     }
 
     public long getId() {
@@ -69,7 +68,7 @@ public class Student {
     }
 
     public int getAge() {
-        return age;
+        return Period.between(birth_of_date,LocalDate.now()).getYears();
     }
 
     public void setAge(int age) {

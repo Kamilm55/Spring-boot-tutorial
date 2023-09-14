@@ -16,10 +16,10 @@ public class StudentConfig {
         return args -> {
              studentRepository.saveAll(List.of(
                      new Student(
-                             1,"Kamil","k@gsmail.com", LocalDate.of(2004,9,10),19
+                             1,"Kamil","k@gsmail.com", LocalDate.of(2004,9,10)
                      ),
                      new Student(
-                             2,"Samir","k@gsmail.com", LocalDate.of(2000,9,10),19
+                             2,"Samir","k@gsmail.com", LocalDate.of(2000,9,10)
                      ))
             );
         };

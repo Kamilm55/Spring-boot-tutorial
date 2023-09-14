@@ -1,9 +1,7 @@
 package com.example.SpringBootTutorial.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,5 +18,10 @@ public class StudentController {
     @GetMapping()//  path for this => @RequestMapping path + @GetMapping(path = ?)
     public List<Student> getStudents(){
         return studentService.getStudents();
+    }
+
+    @PostMapping("/signUp") //@RequestBody => Spring will automatically convert the body of the incoming HTTP request into an instance of the specified Java class
+    public void registerStudent(@RequestBody Student student) {
+        studentService.registerStudent(student);
     }
 }
