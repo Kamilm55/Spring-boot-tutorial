@@ -1,12 +1,23 @@
 package com.example.SpringBootTutorial.student;
 
+import jakarta.annotation.Nullable;
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
+@Entity // for hibernate
+@Table
 public class Student {
+    @Id
+    @SequenceGenerator(name = "sequence_generator" , sequenceName = "sequence_generator" , allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE , generator = "sequence_generator")
     private long id;
+    @Column(nullable = false) // This column does not allow null values
     private String name;
     private String email;
+    @Column(nullable = false)
     private LocalDate birth_of_date;
+    @Column(nullable = false)
     private int age;
 
     public Student() {}
