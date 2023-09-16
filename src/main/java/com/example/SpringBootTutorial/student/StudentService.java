@@ -37,20 +37,27 @@ public class StudentService {
        studentRepository.deleteById(id);
     }
 
-//    @Transactional
+    @Transactional // if we don't use this annotation it set object's value but not in the database
     public Student updateStudent(Long id, String new_email, String new_name) {
         Student student = studentRepository.findStudentById(id);
-//        if(student){
-//            throw new IllegalStateException("There is no student with " + id + " id.");
-//        }
-        // orElseThrows ?
-
-
-        if(new_email != null && new_email.length() > 10 && !student.getEmail().equals(new_email)){
-            student.setEmail(new_email);
+        if(student ==  null){
+            throw new IllegalStateException("There is no student with " + id + " id.");
         }
+
+        // orElseThrows ? => it works with "Optional"
+//        Optional<Student> optionalStudent = studentRepository.findStudentById(id).orElseThrow()
+
+
         if(new_name != null && new_name.length() >= 2 && !student.getName().equals(new_name)){
             student.setName(new_name);
+        }
+
+        if(new_email != null && new_email.length() > 7 ){
+            Optional<Student> optionalStudent = studentRepository.findStudentByEmail(new_email);
+            if(optionalStudent.isPresent()){
+                throw new IllegalStateException("This email is taken");
+            }
+            student.setEmail(new_email);
         }
         return studentRepository.save(student);
     }
