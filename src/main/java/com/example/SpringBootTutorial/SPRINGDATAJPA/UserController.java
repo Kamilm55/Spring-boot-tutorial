@@ -1,4 +1,4 @@
-package com.example.SpringBootTutorial.SPRINGJPA;
+package com.example.SpringBootTutorial.SPRINGDATAJPA;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

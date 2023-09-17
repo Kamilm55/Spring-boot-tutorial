@@ -1,4 +1,4 @@
-package com.example.SpringBootTutorial.SPRINGJPA;
+package com.example.SpringBootTutorial.SPRINGDATAJPA;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

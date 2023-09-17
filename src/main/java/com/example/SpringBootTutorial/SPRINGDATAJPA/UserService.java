@@ -1,4 +1,4 @@
-package com.example.SpringBootTutorial.SPRINGJPA;
+package com.example.SpringBootTutorial.SPRINGDATAJPA;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,4 +15,6 @@ public class UserService {
     public User addUser(User user){
         return userRepo.save(user);
     }
+
+
 }

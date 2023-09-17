@@ -1,6 +1,5 @@
 package com.example.SpringBootTutorial.student;
 
-import com.example.SpringBootTutorial.SPRINGJPA.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
