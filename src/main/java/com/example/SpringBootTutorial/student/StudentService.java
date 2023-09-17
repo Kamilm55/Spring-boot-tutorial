@@ -1,5 +1,6 @@
 package com.example.SpringBootTutorial.student;
 
+import com.example.SpringBootTutorial.SPRINGJPA.User;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -61,4 +62,5 @@ public class StudentService {
         }
         return studentRepository.save(student);
     }
+
 }

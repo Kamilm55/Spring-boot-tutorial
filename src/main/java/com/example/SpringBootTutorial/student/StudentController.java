@@ -1,5 +1,6 @@
 package com.example.SpringBootTutorial.student;
 
+import com.example.SpringBootTutorial.SPRINGJPA.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,5 +35,10 @@ public class StudentController {
     public Student updateStudent(@PathVariable("studentId") Long id , @RequestParam(required = false) String new_email ,@RequestParam(required = false) String new_name){
         return studentService.updateStudent(id,new_email,new_name);
     }
+
+//    @PostMapping("/addUser")
+//    public User addUser (@RequestBody User user){
+//        return studentService.
+//    }
 
 }

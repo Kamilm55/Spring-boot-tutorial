@@ -1,5 +1,6 @@
 package com.example.SpringBootTutorial.student;
 
+import com.example.SpringBootTutorial.SPRINGJPA.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -19,6 +20,7 @@ public interface StudentRepository extends JpaRepository<Student,Long> {
 
     @Query("SELECT s from Student s WHERE s.id = ?1")
     Student findStudentById(Long id) ;
+
 ///////////////////////////////////////////////////
 //    @Transactional
 
