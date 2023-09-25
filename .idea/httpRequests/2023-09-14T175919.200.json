@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Kamil",
+    "email": "k@gsmail.com",
+    "birth_of_date": "2004-09-10",
+    "age": 19
+  },
+  {
+    "id": 2,
+    "name": "Samir",
+    "email": "k@gsmail.com",
+    "birth_of_date": "2000-09-10",
+    "age": 23
+  }
+]

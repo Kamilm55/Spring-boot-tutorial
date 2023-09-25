@@ -1,0 +1,6 @@
+com\example\SpringBootTutorial\student\StudentController.class
+com\example\SpringBootTutorial\student\StudentRepository.class
+com\example\SpringBootTutorial\student\StudentConfig.class
+com\example\SpringBootTutorial\student\Student.class
+com\example\SpringBootTutorial\student\StudentService.class
+com\example\SpringBootTutorial\SpringBootTutorialApplication.class
