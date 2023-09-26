@@ -11,6 +11,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "Customer")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +19,7 @@ public class User {
     private String userName;
     private String userEmail;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user" /*, fetch = FetchType.EAGER*/)
     private Set<Project> projects;
 
 }
