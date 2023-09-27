@@ -23,7 +23,7 @@ public class UserConfig implements CommandLineRunner {
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public void run(String... args) throws Exception {
         User user1 = new User();
         User user2 = new User();
@@ -59,13 +59,15 @@ public class UserConfig implements CommandLineRunner {
         Optional<User> optionalUser = userRepo.findById(user1.getId());
         User user1FromDB = optionalUser.orElseThrow(null);
         if(user1FromDB!=null){
-            user1FromDB.setProjects(user1Projects); // right form is this obj from db
+//            userRepo.updateUserByProjects(user1FromDB.getId() , user1Projects);
+//            user1FromDB.setProjects(user1Projects); // right form is this obj from db
+        projectRepo.updateProjectByUserId(user1FromDB, project1.getId());
+            projectRepo.updateProjectByUserId(user1FromDB, project2.getId());
         }
-
 
         System.out.println(user1);// @Transactional affects this
         System.out.println(user1FromDB);
-        System.out.println(user1FromDB.getProjects());
+        System.out.println(user1FromDB.getProjects()); // In db changes are not visible
 
     }
 }
