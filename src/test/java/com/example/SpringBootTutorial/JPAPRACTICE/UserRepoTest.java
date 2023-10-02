@@ -4,6 +4,7 @@ import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.jpa.repository.Modifying;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -51,10 +52,15 @@ class UserRepoTest {
 
         String newEmail = "KAAMMIL";
 
-        userRepo.updateUserByUserEmail(user1.getId(), newEmail);
+        userRepo.updateUserEmailById(user1.getId(), newEmail);
 
+//        user1.setUserEmail(newEmail); // this updates
+//        userRepo.save(user1);         // but not in the table
         User updatedUser = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+//        System.out.println(newEmail + " " + updatedUser.getUserEmail());
         assertEquals(newEmail, updatedUser.getUserEmail(), "User's email should have been updated");
 
     }
+
+
 }

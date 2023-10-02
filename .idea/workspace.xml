@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077/storage_v2/_src_/database/users.CI6mBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077/storage_v2/_src_/database/users.CI6mBg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/student/SPRINGDATAJPA/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SPRINGDATAJPA/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/student/SPRINGDATAJPA/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SPRINGDATAJPA/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/student/SPRINGDATAJPA/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SPRINGDATAJPA/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/student/SPRINGDATAJPA/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SPRINGDATAJPA/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,33 +49,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/OneDrive/Desktop/Java-tutorial",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "0d5c3c31016c4fb9deb85f064ca10056",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/OneDrive/Desktop/Java-tutorial&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0d5c3c31016c4fb9deb85f064ca10056&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -83,11 +84,24 @@
       <recent name="com.example.SpringBootTutorial.JPAPRACTICE" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepoTest.updateUserByUserEmail">
-    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.ProjectRepoTest.updateProjectByUserId">
+    <configuration name="ProjectRepoTest.updateProjectByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.ProjectRepoTest" />
+      <option name="METHOD_NAME" value="updateProjectByUserId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="UserRepoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepoTest.findOneUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootTutorial" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +111,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
       <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.UserRepoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="findOneUserById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,19 +164,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.generated-requests | #4" />
-      <item itemvalue="JUnit.UserRepoTest" />
+      <item itemvalue="JUnit.ProjectRepoTest.updateProjectByUserId" />
+      <item itemvalue="JUnit.UserRepoTest.findOneUserById" />
       <item itemvalue="JUnit.UserRepoTest.updateUserByProjects" />
       <item itemvalue="JUnit.UserRepoTest.updateUserByUserEmail" />
       <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProjectRepoTest.updateProjectByUserId" />
+        <item itemvalue="JUnit.UserRepoTest.findOneUserById" />
         <item itemvalue="JUnit.UserRepoTest.updateUserByUserEmail" />
         <item itemvalue="JUnit.UserRepoTest.updateUserByProjects" />
         <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
-        <item itemvalue="JUnit.UserRepoTest" />
-        <item itemvalue="HTTP Request.generated-requests | #4" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +210,9 @@
       <workItem from="1695745450385" duration="5606000" />
       <workItem from="1695799463025" duration="4838000" />
       <workItem from="1695918531116" duration="157000" />
-      <workItem from="1696156489099" duration="4397000" />
+      <workItem from="1696156489099" duration="4631000" />
+      <workItem from="1696224590987" duration="222000" />
+      <workItem from="1696225156469" duration="2272000" />
     </task>
     <servers />
   </component>
