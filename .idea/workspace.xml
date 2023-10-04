@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SpringBootTutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SpringBootTutorial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/student/SPRINGDATAJPA/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SPRINGDATAJPA/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/student/SPRINGDATAJPA/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SPRINGDATAJPA/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/student/SPRINGDATAJPA/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SPRINGDATAJPA/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/student/SPRINGDATAJPA/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SPRINGDATAJPA/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <recent name="com.example.SpringBootTutorial.JPAPRACTICE" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProjectRepoTest.updateProjectByUserId">
+  <component name="RunManager" selected="JUnit.UserRepoTest.updateUserByUserEmail">
     <configuration name="ProjectRepoTest.updateProjectByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootTutorial" />
       <extension name="coverage">
@@ -112,6 +110,22 @@
       <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
       <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.UserRepoTest" />
       <option name="METHOD_NAME" value="findOneUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepoTest.insertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.UserRepoTest" />
+      <option name="METHOD_NAME" value="insertUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,34 +163,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootTutorialApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="SpringBootTutorial" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringBootTutorial.SpringBootTutorialApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.SpringBootTutorial.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="JUnit.UserRepoTest.insertUser" />
       <item itemvalue="JUnit.ProjectRepoTest.updateProjectByUserId" />
       <item itemvalue="JUnit.UserRepoTest.findOneUserById" />
       <item itemvalue="JUnit.UserRepoTest.updateUserByProjects" />
       <item itemvalue="JUnit.UserRepoTest.updateUserByUserEmail" />
-      <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepoTest.updateUserByUserEmail" />
+        <item itemvalue="JUnit.UserRepoTest.insertUser" />
         <item itemvalue="JUnit.ProjectRepoTest.updateProjectByUserId" />
         <item itemvalue="JUnit.UserRepoTest.findOneUserById" />
-        <item itemvalue="JUnit.UserRepoTest.updateUserByUserEmail" />
         <item itemvalue="JUnit.UserRepoTest.updateUserByProjects" />
-        <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +212,9 @@
       <workItem from="1695918531116" duration="157000" />
       <workItem from="1696156489099" duration="4631000" />
       <workItem from="1696224590987" duration="222000" />
-      <workItem from="1696225156469" duration="2272000" />
+      <workItem from="1696225156469" duration="2508000" />
+      <workItem from="1696325795526" duration="1680000" />
+      <workItem from="1696403969445" duration="5105000" />
     </task>
     <servers />
   </component>

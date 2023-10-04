@@ -1,5 +1,8 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.FlushModeType;
+import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +18,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserRepoTest {
 
     private final ProjectRepo projectRepo;
+    @PersistenceContext
+    private EntityManager entityManager;
+
     private final UserRepo userRepo;
     @Autowired
     public UserRepoTest(ProjectRepo projectRepo, UserRepo userRepo) {
@@ -46,21 +52,32 @@ class UserRepoTest {
 
 
     @Test
-    @Transactional
+//    @Transactional
     void updateUserByUserEmail() {
         User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 
-        String newEmail = "KAAMMIL";
+        String newEmail = "updated2@gmail";
 
-        userRepo.updateUserEmailById(user1.getId(), newEmail);
+//        userRepo.updateUserEmailById(user1.getId(), newEmail); // update with query
 
-//        user1.setUserEmail(newEmail); // this updates
-//        userRepo.save(user1);         // but not in the table
+        user1.setUserEmail(newEmail); // this updates
+        userRepo.save(user1);         // but not in the table
         User updatedUser = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
-//        System.out.println(newEmail + " " + updatedUser.getUserEmail());
+        System.out.println(newEmail + " " + updatedUser.getUserEmail());
         assertEquals(newEmail, updatedUser.getUserEmail(), "User's email should have been updated");
-
     }
+
+   /* @Test
+    void insertUser(){
+        User user1 = new User();
+        user1.setUserName("NEWuser");
+        user1.setUserEmail("NEWUSER@gmail.com");
+        userRepo.save(user1);
+
+        User updatedUser = userRepo.findById(39L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        assertEquals(user1, updatedUser, "User's email should have been updated");
+
+    }*/
 
 
 }

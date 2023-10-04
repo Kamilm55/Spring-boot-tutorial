@@ -10,16 +10,15 @@ import org.springframework.stereotype.Repository;
 import java.util.Set;
 
 @Repository
-//@Transactional
 public interface UserRepo extends JpaRepository<User, Long> {
 
     @Modifying
     @Query("update User u set u.projects = :projects where u.id = :uid")
     void updateUserByProjects(@Param("uid") Long uid,@Param("projects") Set<Project> projects);
 
-    @Modifying/*(clearAutomatically = true,flushAutomatically = true)*/
     @Transactional
+    @Modifying
     @Query("UPDATE User u SET u.userEmail = :email WHERE u.id = :id")
-    int updateUserEmailById(@Param("id")Long id,@Param("email")String email);
+    void updateUserEmailById(@Param("id")Long id,@Param("email")String email);
 
 }
