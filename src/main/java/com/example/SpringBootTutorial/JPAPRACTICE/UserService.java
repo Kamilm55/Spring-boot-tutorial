@@ -57,10 +57,21 @@ public class UserService {
         p1.setUser(user1); // first we must set user to projects
         p2.setUser(user1);
 
+        //then save these via userRepo
+        // this must be save before , because projects of user is empty , if we run at the end it updates user as empty set
+        // if we run this before  and then run project updates its cascade affect and updates also user
+        System.out.println("First save this user");
+//        userRepo.save(user1);
+        System.out.println(user1);
+
+        System.out.println("Secondly save these projects and update");
+        //then save these via projectRepo
+        System.out.println(user1Projects);
+        projectRepo.saveAll(user1Projects);
+
 //        user1.setProjects(user1Projects); // then projects to user
 
-        userRepo.save(user1);
-        System.out.println(user1);
+
 
 
         // Optionally, assert the expected behavior
@@ -72,5 +83,11 @@ public class UserService {
 
     public Optional<User> getUserWithId(Long userId) {
         return userRepo.findById(userId);
+    }
+
+    public Set<Project> getUserProjectsWithId(Long userId) {
+        User user = userRepo.findById(userId).orElseThrow(()-> new RuntimeException("no user"));
+
+        return user.getProjects();
     }
 }

@@ -19,7 +19,7 @@ public class Task {
     private String description;
     private Status status = Status.NOT_STARTED;
 
-    @ManyToMany(fetch = FetchType.LAZY )
-    @JoinColumn(name = "project_id")
-    private Set<Project> projects ;
+//    @ManyToMany(fetch = FetchType.LAZY )
+//    @JoinColumn(name = "project_id")
+//    private Set<Project> projects ;
 }

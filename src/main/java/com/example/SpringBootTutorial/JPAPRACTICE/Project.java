@@ -1,13 +1,13 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Set;
 
 @Data
+@EqualsAndHashCode(exclude = "user") // this is important for operations in db
+@ToString(exclude = "user")
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -18,7 +18,7 @@ public class Project {
     private String projectName;
     private Status status = Status.NOT_STARTED;
 
-    @ManyToOne(cascade = CascadeType.ALL/*,optional = false*/)//optional = false: This means that a Project entity must always have a reference to a User entity.
+    @ManyToOne(cascade = CascadeType.ALL)//optional = false: This means that a Project entity must always have a reference to a User entity.
     @JoinColumn(name = "user_id" )
     private User user;
 

@@ -24,7 +24,7 @@ public class UserConfig implements CommandLineRunner {
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public void run(String... args) throws Exception {
         User user1 = new User();
         User user2 = new User();
@@ -36,7 +36,7 @@ public class UserConfig implements CommandLineRunner {
         user3.setUserName("Samir");
         user3.setUserEmail("Samir@gmail.com");
 
-        userRepo.saveAll(List.of(user1,user2,user3));
+//        userRepo.saveAll(List.of(user1,user2,user3));
         // Save all users
 
         Project project1 = new Project();
@@ -47,28 +47,37 @@ public class UserConfig implements CommandLineRunner {
         project3.setProjectName("Management");
         project3.setStatus(Status.WORKING);
 
-        projectRepo.saveAll(List.of(project1,project2,project3));
+//        projectRepo.saveAll(List.of(project1,project2,project3));
 //         save all projects
 
         // We cannot give one user(customer) same project , we can give more but not same
         // set project to user via userRepo (update)
-        Set<Project> user1Projects = new HashSet<>();
-//        user1Projects.add(project1 );
-//        user1Projects.add(project2);
-        // user1 has 2 projects which he must do
-//        user1.setProjects(user1Projects); // this is not from db // therefore we cannot update with set
+
+
+            //not set , set is for first time , when we want to update we must get and .add
+            // user1 has 2 projects which he must do
+
+            user1.getProjects().add(project1);
+            user1.getProjects().add(project2);
+//            userRepo.save(user1);
+
+                    userRepo.saveAll(List.of(user1,user2,user3));
+
+            project1.setUser(user1);
+            project2.setUser(user1);
+//            projectRepo.save(project1);
+//            projectRepo.save(project2);
+
+            projectRepo.saveAll(List.of(project1,project2,project3));
+
+
+//        System.out.println(user1);
+//        System.out.println(user1.getProjects());
+//        System.out.println(project1.getUser());
         Optional<User> optionalUser = userRepo.findById(user1.getId());
-        User user1FromDB = optionalUser.orElseThrow(null);
-//        if(user1FromDB!=null){
-////            userRepo.updateUserByProjects(user1FromDB.getId() , user1Projects);
-////            user1FromDB.setProjects(user1Projects); // right form is this obj from db
-//        projectRepo.updateProjectByUserId(user1FromDB, project1.getId());
-//            projectRepo.updateProjectByUserId(user1FromDB, project2.getId());
-//        }
-
-//        System.out.println(user1);// @Transactional affects this
-//        System.out.println(user1FromDB);
-//        System.out.println(user1FromDB.getProjects()); // In db changes are not visible
-
+        User user1FromDB = optionalUser.orElseThrow(()-> new RuntimeException("no user "));
+        System.out.println(user1FromDB); // In db changes are not visible
+        System.out.println(user1FromDB.getProjects());
+        System.out.println(project1.getUser());
     }
 }

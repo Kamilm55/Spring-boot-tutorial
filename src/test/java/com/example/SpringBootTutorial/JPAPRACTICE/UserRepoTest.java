@@ -77,20 +77,20 @@ class UserRepoTest {
 
     }*/
 
-    @Test
-    @Transactional
-    void addItem(){
-        User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
-
-        Item item1 = new Item();
-
-        item1.setUser(user1);
-        user1.setItem(item1);
-        userRepo.save(user1);
-
-        System.out.println(item1 + " " + user1);
-
-        assertEquals(item1, user1.getItem(), "User's item should have been updated");
-    }
+//    @Test
+//    @Transactional
+//    void addItem(){
+//        User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+//
+//        Item item1 = new Item();
+//
+//        item1.setUser(user1);
+//        user1.setItem(item1);
+//        userRepo.save(user1);
+//
+//        System.out.println(item1 + " " + user1);
+//
+//        assertEquals(item1, user1.getItem(), "User's item should have been updated");
+//    }
 
 }

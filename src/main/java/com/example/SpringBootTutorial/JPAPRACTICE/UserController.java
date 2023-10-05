@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
+import java.util.Set;
 
 @RestController
 @RequestMapping("api/v1/user/")
@@ -28,4 +29,10 @@ public class UserController {
     public Optional<User> getUserWithId(@RequestParam Long userId){
       return userService.getUserWithId(userId);
     }
+
+    @GetMapping("getUserProjects")
+    public Set<Project> getUserProjectsWithId(@RequestParam Long userId){
+        return userService.getUserProjectsWithId(userId);
+    }
+
 }

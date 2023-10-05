@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>5195</IntrospectionStateNumber>
+      <IntrospectionStateNumber>5925</IntrospectionStateNumber>
       <ServerVersion>15.4</ServerVersion>
       <StartupTime>1696224540</StartupTime>
       <TimeZones>true ACDT
@@ -814,7 +814,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>5195</IntrospectionStateNumber>
+      <IntrospectionStateNumber>5925</IntrospectionStateNumber>
       <ObjectId>19453</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4227,12 +4227,196 @@ false Zulu
     <schema id="264" parent="5" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>5195</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-10-05.07:16:35.642</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-10-05.03:16:36</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>5925</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-10-05.10:50:35.347</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-10-05.06:50:36</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
+    <sequence id="265" parent="264" name="customer_id_seq">
+      <DasType>bigint|0s</DasType>
+      <ObjectId>28342</ObjectId>
+      <SequenceIdentity>1(4)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>5920</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="266" parent="264" name="project_id_seq">
+      <DasType>bigint|0s</DasType>
+      <ObjectId>28351</ObjectId>
+      <SequenceIdentity>1(4)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>5921</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="267" parent="264" name="task_id_seq">
+      <DasType>bigint|0s</DasType>
+      <ObjectId>28359</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>5922</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="268" parent="264" name="customer">
+      <ObjectId>28343</ObjectId>
+      <StateNumber>5923</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="269" parent="264" name="project">
+      <ObjectId>28352</ObjectId>
+      <StateNumber>5923</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="270" parent="264" name="task">
+      <ObjectId>28360</ObjectId>
+      <StateNumber>5922</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="271" parent="268" name="id">
+      <DasType>bigint|0s</DasType>
+      <DefaultExpression>nextval(&apos;customer_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>5920</StateNumber>
+      <SequenceId>28342</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="272" parent="268" name="user_email">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>5920</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="273" parent="268" name="user_name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>5920</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="274" parent="268" name="customer_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>28349</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>5920</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="275" parent="268" name="customer_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>28350</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>5920</StateNumber>
+      <UnderlyingIndexId>28349</UnderlyingIndexId>
+    </key>
+    <check id="276" parent="269" name="project_status_check">
+      <ColNames>status</ColNames>
+      <ObjectId>28356</ObjectId>
+      <Predicate>(status &gt;= 0) AND (status &lt;= 2)</Predicate>
+      <StateNumber>5921</StateNumber>
+    </check>
+    <column id="277" parent="269" name="status">
+      <DasType>smallint|0s</DasType>
+      <Position>1</Position>
+      <StateNumber>5921</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="278" parent="269" name="id">
+      <DasType>bigint|0s</DasType>
+      <DefaultExpression>nextval(&apos;project_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>5921</StateNumber>
+      <SequenceId>28351</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="279" parent="269" name="user_id">
+      <DasType>bigint|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>5921</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="280" parent="269" name="project_name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>5921</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="281" parent="269" name="fksb9v3isias665rxkemwoqk195">
+      <ColNames>user_id</ColNames>
+      <ObjectId>28369</ObjectId>
+      <StateNumber>5923</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>28343</RefTableId>
+    </foreign-key>
+    <index id="282" parent="269" name="project_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>28357</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>5921</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="283" parent="269" name="project_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>28358</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>5921</StateNumber>
+      <UnderlyingIndexId>28357</UnderlyingIndexId>
+    </key>
+    <check id="284" parent="270" name="task_status_check">
+      <ColNames>status</ColNames>
+      <ObjectId>28364</ObjectId>
+      <Predicate>(status &gt;= 0) AND (status &lt;= 2)</Predicate>
+      <StateNumber>5922</StateNumber>
+    </check>
+    <column id="285" parent="270" name="status">
+      <DasType>smallint|0s</DasType>
+      <Position>1</Position>
+      <StateNumber>5922</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="286" parent="270" name="id">
+      <DasType>bigint|0s</DasType>
+      <DefaultExpression>nextval(&apos;task_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>5922</StateNumber>
+      <SequenceId>28359</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="287" parent="270" name="description">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>5922</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="288" parent="270" name="title">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>5922</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="289" parent="270" name="task_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>28367</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>5922</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="290" parent="270" name="task_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>28368</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>5922</StateNumber>
+      <UnderlyingIndexId>28367</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>
