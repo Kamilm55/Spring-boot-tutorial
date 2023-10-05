@@ -1,13 +1,14 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Set;
 
 @Data
-@EqualsAndHashCode(exclude = "user") // this is important for operations in db
-@ToString(exclude = "user")
+@EqualsAndHashCode(exclude =  {"user", "tasks"}) // this is important for operations in db
+@ToString(exclude =  {"user", "tasks"})
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -20,9 +21,10 @@ public class Project {
 
     @ManyToOne(cascade = CascadeType.ALL)//optional = false: This means that a Project entity must always have a reference to a User entity.
     @JoinColumn(name = "user_id" )
+    @JsonBackReference // Use this annotation to break the circular reference when serializing
     private User user;
 
-//    @ManyToMany(mappedBy = "projects" /*, fetch = FetchType.LAZY*/)
-//    @JoinColumn(name = "task_id") //n a bidirectional JPA relationship, when you use the mappedBy attribute in one entity, you're essentially indicating that the relationship is already mapped by the other entity, and you don't need to specify the @JoinColumn because the mapping is defined in the other entity.
-//    private Set<Task> tasks;
+    @ManyToMany(mappedBy = "projects" /*, fetch = FetchType.LAZY*/)
+ //n a bidirectional JPA relationship, when you use the mappedBy attribute in one entity, you're essentially indicating that the relationship is already mapped by the other entity, and you don't need to specify the @JoinColumn because the mapping is defined in the other entity.
+    private Set<Task> tasks;
 }

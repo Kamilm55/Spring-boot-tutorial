@@ -1,5 +1,6 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,7 +21,8 @@ public class User {
     private String userName;
     private String userEmail;
 
-    @OneToMany(mappedBy = "user"  , cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "user"  , cascade = CascadeType.ALL/*, fetch = FetchType.EAGER*/)
+    @JsonManagedReference // Use this annotation to control the serialization of the projects field
     private Set<Project> projects = new HashSet<>();
 
 //    @OneToOne(mappedBy = "user"  , cascade = CascadeType.ALL, fetch = FetchType.EAGER)

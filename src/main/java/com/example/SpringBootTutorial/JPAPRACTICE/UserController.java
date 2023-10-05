@@ -1,6 +1,7 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -30,9 +31,9 @@ public class UserController {
       return userService.getUserWithId(userId);
     }
 
-    @GetMapping("getUserProjects")
+    @GetMapping(value = "getUserProjects" )
     public Set<Project> getUserProjectsWithId(@RequestParam Long userId){
-        return userService.getUserProjectsWithId(userId);
+       return  userService.getUserProjectsWithId(userId);
     }
 
 }

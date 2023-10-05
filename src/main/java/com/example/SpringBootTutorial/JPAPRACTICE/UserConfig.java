@@ -74,7 +74,7 @@ public class UserConfig implements CommandLineRunner {
 //        System.out.println(user1);
 //        System.out.println(user1.getProjects());
 //        System.out.println(project1.getUser());
-        Optional<User> optionalUser = userRepo.findById(user1.getId());
+        Optional<User> optionalUser = userRepo.findById(1L);
         User user1FromDB = optionalUser.orElseThrow(()-> new RuntimeException("no user "));
         System.out.println(user1FromDB); // In db changes are not visible
         System.out.println(user1FromDB.getProjects());

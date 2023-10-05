@@ -1,13 +1,13 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Set;
 
 @Data
+@EqualsAndHashCode(exclude =  "projects") // this is important for operations in db
+@ToString(exclude = "projects")
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -19,7 +19,7 @@ public class Task {
     private String description;
     private Status status = Status.NOT_STARTED;
 
-//    @ManyToMany(fetch = FetchType.LAZY )
+    @ManyToMany(fetch = FetchType.LAZY )
 //    @JoinColumn(name = "project_id")
-//    private Set<Project> projects ;
+    private Set<Project> projects ;
 }

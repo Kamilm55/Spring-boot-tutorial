@@ -86,8 +86,17 @@ public class UserService {
     }
 
     public Set<Project> getUserProjectsWithId(Long userId) {
-        User user = userRepo.findById(userId).orElseThrow(()-> new RuntimeException("no user"));
+        Optional<User> optionalUser = userRepo.findById(userId);
+        User user1FromDB = optionalUser.orElse(null);
 
-        return user.getProjects();
+        if(user1FromDB!=null){
+            System.out.println(user1FromDB.getProjects());
+            Class<?> type = user1FromDB.getProjects().getClass();
+            System.out.println("Type of projects: " + type.getName());
+            System.out.println(user1FromDB.getProjects().getClass());
+            return  user1FromDB.getProjects();
+        }
+
+        return new HashSet<>();
     }
 }
