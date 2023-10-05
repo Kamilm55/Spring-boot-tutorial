@@ -1,3 +1,102 @@
+POST http://localhost:8080/api/v1/user/updateEmail?newEmail=@gmail.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T043818.400.json
+
+###
+
+POST http://localhost:8080/api/v1/user/updateEmail?newEmail=@gmail.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T043740.400.json
+
+###
+
+POST http://localhost:8080/api/v1/user/updateEmail?newEmail=@gmail.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T043733.400.json
+
+###
+
+POST http://localhost:8080/api/v1/user/updateEmail?newEmail=@gmail.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T043704.400.json
+
+###
+
+POST http://localhost:8080/api/v1/user/updateEmail?newEmail=@gmail.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T043633.400.json
+
+###
+
+POST http://localhost:8080/api/v1/user/updateEmail?newEmail=@gmail.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T043534.400.json
+
+###
+
+POST http://localhost:8080/api/v1/user/updateEmail?id=1&newEmail=neWEmail@gmail.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/api/v1/user/updateEmail?id=1&newEmail=kamil22@gmail.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/api/v1/user/updateEmail
+Content-Type: application/x-www-form-urlencoded
+{:
+  "id": 2,
+  "newEmail": "Java Virtual Machine"
+}:
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T043112.400.html
+
+###
+
 POST http://localhost:8080/api/v1/users/add
 Content-Type: application/json
 Content-Length: 86
@@ -449,131 +548,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-09-14T175636.500.json
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "z@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "z@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-<> 2023-09-14T175551.500.json
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "z@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "z@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-<> 2023-09-14T174849.500.json
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "z@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 71
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{"name":"Zulfiqar","email":"k@gsmail.com","birth_of_date":"2000-09-10"}
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 71
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{"name":"Zulfiqar","email":"k@gsmail.com","birth_of_date":"2000-09-10"}
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 71
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{"name":"Zulfiqar","email":"k@gsmail.com","birth_of_date":"2000-09-10"}
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 71
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{"name":"Zulfiqar","email":"k@gsmail.com","birth_of_date":"2000-09-10"}
-
-<> 2023-09-14T174339.500.json
 
 ###
 

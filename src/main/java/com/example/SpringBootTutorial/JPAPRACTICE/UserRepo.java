@@ -12,13 +12,18 @@ import java.util.Set;
 @Repository
 public interface UserRepo extends JpaRepository<User, Long> {
 
+    @Transactional
     @Modifying
     @Query("update User u set u.projects = :projects where u.id = :uid")
     void updateUserByProjects(@Param("uid") Long uid,@Param("projects") Set<Project> projects);
 
-    @Transactional
+//    @Transactional
     @Modifying
     @Query("UPDATE User u SET u.userEmail = :email WHERE u.id = :id")
     void updateUserEmailById(@Param("id")Long id,@Param("email")String email);
+
+    @Modifying
+    @Query("UPDATE User u SET u.userName = :userName WHERE u.id = :id")
+    void updateUserNameById(@Param("id")Long id,@Param("userName")String userName);
 
 }

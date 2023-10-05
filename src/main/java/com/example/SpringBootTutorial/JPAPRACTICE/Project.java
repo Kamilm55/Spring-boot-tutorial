@@ -22,7 +22,7 @@ public class Project {
     @JoinColumn(name = "user_id" )
     private User user;
 
-    @ManyToMany(mappedBy = "projects" /*, fetch = FetchType.LAZY*/)
+//    @ManyToMany(mappedBy = "projects" /*, fetch = FetchType.LAZY*/)
 //    @JoinColumn(name = "task_id") //n a bidirectional JPA relationship, when you use the mappedBy attribute in one entity, you're essentially indicating that the relationship is already mapped by the other entity, and you don't need to specify the @JoinColumn because the mapping is defined in the other entity.
-    private Set<Task> tasks;
+//    private Set<Task> tasks;
 }

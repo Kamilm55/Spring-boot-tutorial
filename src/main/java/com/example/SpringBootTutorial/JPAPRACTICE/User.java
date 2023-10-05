@@ -22,7 +22,7 @@ public class User {
     private String userName;
     private String userEmail;
 
-    @OneToMany(mappedBy = "user"  , cascade = CascadeType.ALL/*, fetch = FetchType.EAGER*/)
+    @OneToMany(mappedBy = "user"  , cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Project> projects = new HashSet<>();
 
 }
