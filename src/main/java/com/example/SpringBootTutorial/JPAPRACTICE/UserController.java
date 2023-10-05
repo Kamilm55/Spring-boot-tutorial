@@ -1,10 +1,9 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1/user/")
@@ -18,5 +17,15 @@ public class UserController {
     @PostMapping("updateEmail")
     public void updateUserEmailById(@RequestParam String newEmail){
          userService.updateUserEmailById(newEmail);
+    }
+
+    @GetMapping("updateUserProjects")
+    public void updateUserProjects(){
+        userService.updateUserProjects();
+    }
+
+    @GetMapping("getUser")
+    public Optional<User> getUserWithId(@RequestParam Long userId){
+      return userService.getUserWithId(userId);
     }
 }

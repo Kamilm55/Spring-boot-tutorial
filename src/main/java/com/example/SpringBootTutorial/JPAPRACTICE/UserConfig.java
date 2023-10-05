@@ -66,9 +66,9 @@ public class UserConfig implements CommandLineRunner {
 //            projectRepo.updateProjectByUserId(user1FromDB, project2.getId());
 //        }
 
-        System.out.println(user1);// @Transactional affects this
-        System.out.println(user1FromDB);
-        System.out.println(user1FromDB.getProjects()); // In db changes are not visible
+//        System.out.println(user1);// @Transactional affects this
+//        System.out.println(user1FromDB);
+//        System.out.println(user1FromDB.getProjects()); // In db changes are not visible
 
     }
 }

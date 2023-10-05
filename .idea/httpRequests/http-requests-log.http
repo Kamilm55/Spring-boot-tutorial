@@ -1,3 +1,49 @@
+GET http://localhost:8080/api/v1/user/updateUserProjects
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T064217.500.json
+
+###
+
+GET http://localhost:8080/api/v1/user/updateUserProjects
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T061855.500.json
+
+###
+
+GET http://localhost:8080/api/v1/user/updateUserProjects
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T060829.405.json
+
+###
+
+GET http://localhost:8080/api/v1/user/updateUserProjects
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T060816.405.json
+
+###
+
+POST http://localhost:8080/api/v1/user/updateUserProjects
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-05T060747.404.json
+
+###
+
 POST http://localhost:8080/api/v1/user/updateEmail?newEmail=@gmail.com
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
@@ -475,79 +521,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "email": "SADASD@gsmail.com",
   "birth_of_date": "2001-09-10"
 }
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 89
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "zsdasd@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-###
-
-GET http://localhost:8080/api/v1/students
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-14T175919.200.json
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 89
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "zsdasd@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "z@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-<> 2023-09-14T175819.500.json
-
-###
-
-POST http://localhost:8080/api/v1/students/signUp
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "Zulfiqar",
-  "email": "z@gsmail.com",
-  "birth_of_date": "1975-09-10"
-}
-
-<> 2023-09-14T175636.500.json
 
 ###
 

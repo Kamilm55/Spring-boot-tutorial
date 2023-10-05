@@ -25,4 +25,7 @@ public class User {
     @OneToMany(mappedBy = "user"  , cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Project> projects = new HashSet<>();
 
+    @OneToOne(mappedBy = "user"  , cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Item item;
+
 }
