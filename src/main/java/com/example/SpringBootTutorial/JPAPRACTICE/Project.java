@@ -19,7 +19,7 @@ public class Project {
     private String projectName;
     private Status status = Status.NOT_STARTED;
 
-    @ManyToOne(cascade = CascadeType.ALL)//optional = false: This means that a Project entity must always have a reference to a User entity.
+    @ManyToOne()
     @JoinColumn(name = "user_id" )
     @JsonBackReference // Use this annotation to break the circular reference when serializing
     private User user;

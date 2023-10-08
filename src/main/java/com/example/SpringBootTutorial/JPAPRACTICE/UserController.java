@@ -36,4 +36,9 @@ public class UserController {
        return  userService.getUserProjectsWithId(userId);
     }
 
+    @DeleteMapping("deleteUser")
+    public void  deleteUserWithId(@RequestParam Long userId){
+         userService.deleteUserWithId(userId);
+    }
+
 }

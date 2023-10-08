@@ -7,19 +7,15 @@
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077/storage_v2/_src_/database/users.CI6mBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077/storage_v2/_src_/database/users.CI6mBg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T201435.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T201530.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Item.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,15 +87,28 @@
       <recent name="com.example.SpringBootTutorial.JPAPRACTICE" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #19">
-    <configuration name="generated-requests | #17" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="17" requestIdentifier="#17" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProjectRepoTest.deleteProjectWithId">
     <configuration name="generated-requests | #18" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="18" requestIdentifier="#18" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #19" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="19" requestIdentifier="#19" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="ProjectRepoTest.deleteProjectWithId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.ProjectRepoTest" />
+      <option name="METHOD_NAME" value="deleteProjectWithId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="UserRepoTest.addItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootTutorial" />
@@ -133,18 +142,18 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests | #19" />
-      <item itemvalue="HTTP Request.generated-requests | #17" />
       <item itemvalue="HTTP Request.generated-requests | #18" />
+      <item itemvalue="JUnit.ProjectRepoTest.deleteProjectWithId" />
       <item itemvalue="JUnit.UserRepoTest.addItem" />
       <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #19" />
+        <item itemvalue="JUnit.ProjectRepoTest.deleteProjectWithId" />
         <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
+        <item itemvalue="HTTP Request.generated-requests | #19" />
         <item itemvalue="JUnit.UserRepoTest.addItem" />
         <item itemvalue="HTTP Request.generated-requests | #18" />
-        <item itemvalue="HTTP Request.generated-requests | #17" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +196,9 @@
       <workItem from="1696471140813" duration="4786000" />
       <workItem from="1696485533768" duration="4668000" />
       <workItem from="1696493398320" duration="630000" />
-      <workItem from="1696494044788" duration="3658000" />
+      <workItem from="1696494044788" duration="3790000" />
+      <workItem from="1696524768825" duration="75000" />
+      <workItem from="1696786427776" duration="2516000" />
     </task>
     <servers />
   </component>

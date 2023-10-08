@@ -99,4 +99,8 @@ public class UserService {
 
         return new HashSet<>();
     }
+
+    public void deleteUserWithId(Long userId) {
+        userRepo.deleteById(userId);
+    }
 }

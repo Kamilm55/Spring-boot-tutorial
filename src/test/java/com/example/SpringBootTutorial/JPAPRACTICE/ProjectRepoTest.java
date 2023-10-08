@@ -28,4 +28,12 @@ class ProjectRepoTest {
         assertEquals(p1.getUser() , user1 , "User is not updated");
 
     }
+
+    @Test
+    void deleteProjectWithId(){
+        Long projectId = 2L;
+
+        projectRepo.deleteById(projectId);
+
+    }
 }

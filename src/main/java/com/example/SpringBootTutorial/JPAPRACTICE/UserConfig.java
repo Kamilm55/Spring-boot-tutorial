@@ -61,23 +61,24 @@ public class UserConfig implements CommandLineRunner {
             user1.getProjects().add(project2);
 //            userRepo.save(user1);
 
-                    userRepo.saveAll(List.of(user1,user2,user3));
+
+//                    userRepo.saveAll(List.of(user1,user2,user3));
 
             project1.setUser(user1);
             project2.setUser(user1);
 //            projectRepo.save(project1);
 //            projectRepo.save(project2);
 
-            projectRepo.saveAll(List.of(project1,project2,project3));
+//            projectRepo.saveAll(List.of(project1,project2,project3));
 
 
 //        System.out.println(user1);
 //        System.out.println(user1.getProjects());
 //        System.out.println(project1.getUser());
-        Optional<User> optionalUser = userRepo.findById(1L);
-        User user1FromDB = optionalUser.orElseThrow(()-> new RuntimeException("no user "));
-        System.out.println(user1FromDB); // In db changes are not visible
-        System.out.println(user1FromDB.getProjects());
-        System.out.println(project1.getUser());
+//        Optional<User> optionalUser = userRepo.findById(1L);
+//        User user1FromDB = optionalUser.orElseThrow(()-> new RuntimeException("no user "));
+//        System.out.println(user1FromDB); // In db changes are not visible
+//        System.out.println(user1FromDB.getProjects());
+//        System.out.println(project1.getUser());
     }
 }

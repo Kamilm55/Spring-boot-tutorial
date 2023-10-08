@@ -21,11 +21,9 @@ public class User {
     private String userName;
     private String userEmail;
 
-    @OneToMany(mappedBy = "user"  , cascade = CascadeType.ALL/*, fetch = FetchType.EAGER*/)
+    @OneToMany(mappedBy = "user" /*, fetch = FetchType.EAGER*/)// cascade = CascadeType.ALL // if we delete one user it deletes all projects that Fk is this user
     @JsonManagedReference // Use this annotation to control the serialization of the projects field
     private Set<Project> projects = new HashSet<>();
 
-//    @OneToOne(mappedBy = "user"  , cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-//    private Item item;
 
 }
