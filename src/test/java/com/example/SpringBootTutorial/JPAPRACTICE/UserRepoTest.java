@@ -27,8 +27,8 @@ class UserRepoTest {
         User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 
         // Fetch two distinct projects
-        Project p1 = projectRepo.findById(1L).orElseThrow(() -> new RuntimeException("Project with ID 1 not found"));
-        Project p2 = projectRepo.findById(2L).orElseThrow(() -> new RuntimeException("Project with ID 2 not found"));
+        Project p1 = projectRepo.findById(3L).orElseThrow(() -> new RuntimeException("Project with ID 1 not found"));
+        Project p2 = projectRepo.findById(4L).orElseThrow(() -> new RuntimeException("Project with ID 2 not found"));
 
         // Create a set of projects
         Set<Project> user1Projects = new HashSet<>();
@@ -45,7 +45,8 @@ class UserRepoTest {
 
         // Optionally, assert the expected behavior
         User updatedUser = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
-        assertEquals(user1Projects, updatedUser.getProjects(), "User's projects should have been updated");
+
+        assertEquals(user1Projects, projectRepo.getProjectsByUserId(updatedUser.getId()), "User's projects should have been updated");
     }
 
 
@@ -65,6 +66,14 @@ class UserRepoTest {
         assertEquals(newEmail, updatedUser.getUserEmail(), "User's email should have been updated");
     }
 
+
+    @Test
+    void deleteUser(){
+        User user1 = userRepo.findById(4L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+
+        userRepo.deleteById(user1.getId());
+
+    }
    /* @Test
     void insertUser(){
         User user1 = new User();
@@ -77,20 +86,6 @@ class UserRepoTest {
 
     }*/
 
-//    @Test
-//    @Transactional
-//    void addItem(){
-//        User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
-//
-//        Item item1 = new Item();
-//
-//        item1.setUser(user1);
-//        user1.setItem(item1);
-//        userRepo.save(user1);
-//
-//        System.out.println(item1 + " " + user1);
-//
-//        assertEquals(item1, user1.getItem(), "User's item should have been updated");
-//    }
+
 
 }
