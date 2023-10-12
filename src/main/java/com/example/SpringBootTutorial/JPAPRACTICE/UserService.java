@@ -35,11 +35,11 @@ public class UserService {
     @Transactional
     public void updateUserProjects() {
         // Ensure that there is a user with ID 1 in the database
-        User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        User user1 = userRepo.findById(8L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 
         // Fetch two distinct projects
         Project p1 = projectRepo.findById(1L).orElseThrow(() -> new RuntimeException("Project with ID 1 not found"));
-        Project p2 = projectRepo.findById(2L).orElseThrow(() -> new RuntimeException("Project with ID 2 not found"));
+        Project p2 = projectRepo.findById(8L).orElseThrow(() -> new RuntimeException("Project with ID 2 not found"));
 
         // Create a set of projects
         Set<Project> user1Projects = new HashSet<>();

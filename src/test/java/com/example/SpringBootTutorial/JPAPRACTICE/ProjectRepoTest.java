@@ -38,7 +38,7 @@ class ProjectRepoTest {
 
     @Test
     void updateProjectByProjectStatusAndName() {
-        Project p1 = projectRepo.findById(3L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
+        Project p1 = projectRepo.findById(7L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
 //       p1.setStatus(Status.COMPLETED);
 //       p1.setProjectName("NewProject");
 //       projectRepo.save(p1);
@@ -59,7 +59,7 @@ class ProjectRepoTest {
     }
     @Test
     void getProjectsWithUserId(){
-        User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        User user1 = userRepo.findById(7L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 
         Set<Project>  user1Projects =  projectRepo.getProjectsByUserId(user1.getId());
 
@@ -72,7 +72,7 @@ class ProjectRepoTest {
 
     @Test
     void deleteProjectWithId(){
-        Project p1 =  projectRepo.findById(4L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
+        Project p1 =  projectRepo.findById(7L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
         Long relatedUserId = p1.getUser().getId();
 
         projectRepo.deleteById(p1.getId());

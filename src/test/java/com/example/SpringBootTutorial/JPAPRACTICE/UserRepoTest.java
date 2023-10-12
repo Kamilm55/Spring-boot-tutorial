@@ -1,12 +1,8 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
-import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.HashSet;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -14,46 +10,51 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class UserRepoTest {
 
     private final ProjectRepo projectRepo;
+    private final UserService userService;
 
     private final UserRepo userRepo;
     @Autowired
-    public UserRepoTest(ProjectRepo projectRepo, UserRepo userRepo) {
+    public UserRepoTest(ProjectRepo projectRepo, UserService userService, UserRepo userRepo) {
         this.projectRepo = projectRepo;
+        this.userService = userService;
         this.userRepo = userRepo;
     }
     @Test
     void updateUserByProjects() {
-        // Ensure that there is a user with ID 1 in the database
-        User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        userService.updateUserProjects();
 
-        // Fetch two distinct projects
-        Project p1 = projectRepo.findById(3L).orElseThrow(() -> new RuntimeException("Project with ID 1 not found"));
-        Project p2 = projectRepo.findById(4L).orElseThrow(() -> new RuntimeException("Project with ID 2 not found"));
-
-        // Create a set of projects
-        Set<Project> user1Projects = new HashSet<>();
-        user1Projects.add(p1);
-        user1Projects.add(p2);
-
-
-        // Update the user's projects with query
-//        userRepo.updateUserByProjects(user1.getId(), user1Projects);
-
-        user1.setProjects(user1Projects);
-        System.out.println(user1);
-        userRepo.save(user1);
-
-        // Optionally, assert the expected behavior
-        User updatedUser = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
-
-        assertEquals(user1Projects, projectRepo.getProjectsByUserId(updatedUser.getId()), "User's projects should have been updated");
+        // These don;t work for @Transactional annotation
+//        // Ensure that there is a user with ID 1 in the database
+//        User user1 = userRepo.findById(8L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+//
+//        // Fetch two distinct projects
+//        Project p1 = projectRepo.findById(9L).orElseThrow(() -> new RuntimeException("Project with ID 1 not found"));
+//        Project p2 = projectRepo.findById(1L).orElseThrow(() -> new RuntimeException("Project with ID 2 not found"));
+//
+//        // Create a set of projects
+//        Set<Project> user1Projects = new HashSet<>();
+//        user1Projects.add(p1);
+//        user1Projects.add(p2);
+//
+////        user1.getProjects().addAll(user1Projects);
+//
+//        // Update the user's projects with query
+////        userRepo.updateUserByProjects(user1.getId(), user1Projects);
+//
+//        user1.setProjects(user1Projects);
+//        userRepo.save(user1);
+//
+//        // Optionally, assert the expected behavior
+//        User updatedUser = userRepo.findById(8L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+//
+//        assertEquals(user1Projects, projectRepo.getProjectsByUserId(updatedUser.getId()), "User's projects should have been updated");
     }
 
 
     @Test
 //    @Transactional // in test this not working , it works in service (business logic) , controller (complex business logic) or REPOSITORIES(every db operations are commited immediately)
     void updateUserByUserEmail() {
-        User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        User user1 = userRepo.findById(7L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 
         String newEmail = "updated2@gmail";
 
@@ -61,7 +62,7 @@ class UserRepoTest {
 
 //        user1.setUserEmail(newEmail); // this updates
 //        userRepo.save(user1);         // but not in the table
-        User updatedUser = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        User updatedUser = userRepo.findById(7L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 //        System.out.println(newEmail + " " + updatedUser.getUserEmail());
         assertEquals(newEmail, updatedUser.getUserEmail(), "User's email should have been updated");
     }
@@ -69,8 +70,9 @@ class UserRepoTest {
 
     @Test
     void deleteUser(){
-        User user1 = userRepo.findById(4L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        User user1 = userRepo.findById(8L).orElseThrow(() -> new RuntimeException("User not found"));
 
+//        @PreRemove works and set reference user to null
         userRepo.deleteById(user1.getId());
 
     }
