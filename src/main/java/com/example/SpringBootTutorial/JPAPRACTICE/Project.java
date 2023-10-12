@@ -19,7 +19,7 @@ public class Project {
     private String projectName;
     private Status status = Status.NOT_STARTED;
 
-    @ManyToOne()
+    @ManyToOne(cascade = CascadeType.PERSIST) // when we use CascadeType.ALL if we delete project it deletes related user
     @JoinColumn(name = "user_id" )
     @JsonBackReference // Use this annotation to break the circular reference when serializing
     private User user;
