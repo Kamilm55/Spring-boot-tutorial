@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "NewBranch2",
     "last_opened_file_path": "C:/Users/User/OneDrive/Desktop/Java-tutorial",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,8 +80,8 @@
       <recent name="com.example.SpringBootTutorial.JPAPRACTICE" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepoTest.deleteUser">
-    <configuration name="ProjectRepoTest.getProjectsWithUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProjectRepoTest.getUserReferenceWithProjectId">
+    <configuration name="ProjectRepoTest.deleteProjectWithId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootTutorial" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +91,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
       <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.ProjectRepoTest" />
-      <option name="METHOD_NAME" value="getProjectsWithUserId" />
+      <option name="METHOD_NAME" value="deleteProjectWithId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectRepoTest.getUserReferenceWithProjectId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.ProjectRepoTest" />
+      <option name="METHOD_NAME" value="getUserReferenceWithProjectId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,22 +124,6 @@
       <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
       <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.UserRepoTest" />
       <option name="METHOD_NAME" value="deleteUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRepoTest.updateUserByProjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
-      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.UserRepoTest" />
-      <option name="METHOD_NAME" value="updateUserByProjects" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,19 +160,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ProjectRepoTest.deleteProjectWithId" />
+      <item itemvalue="JUnit.ProjectRepoTest.getUserReferenceWithProjectId" />
       <item itemvalue="JUnit.UserRepoTest.deleteUser" />
-      <item itemvalue="JUnit.ProjectRepoTest.getProjectsWithUserId" />
-      <item itemvalue="JUnit.UserRepoTest.updateUserByProjects" />
       <item itemvalue="JUnit.UserRepoTest.updateUserByUserEmail" />
       <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepoTest.deleteUser" />
-        <item itemvalue="JUnit.UserRepoTest.updateUserByProjects" />
-        <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
+        <item itemvalue="JUnit.ProjectRepoTest.getUserReferenceWithProjectId" />
         <item itemvalue="JUnit.UserRepoTest.updateUserByUserEmail" />
-        <item itemvalue="JUnit.ProjectRepoTest.getProjectsWithUserId" />
+        <item itemvalue="JUnit.ProjectRepoTest.deleteProjectWithId" />
+        <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
+        <item itemvalue="JUnit.UserRepoTest.deleteUser" />
       </list>
     </recent_temporary>
   </component>

@@ -72,7 +72,7 @@ class ProjectRepoTest {
 
     @Test
     void deleteProjectWithId(){
-        Project p1 =  projectRepo.findById(7L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
+        Project p1 =  projectRepo.findById(1L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
         Long relatedUserId = p1.getUser().getId();
 
         projectRepo.deleteById(p1.getId());
@@ -82,5 +82,32 @@ class ProjectRepoTest {
 //        System.out.println(updatedUser.getProjects());
 
         // this is for fetch type eager
+    }
+//    @Test
+//    void deleteUserReferenceInProject(){
+//        User user1 = userRepo.findById(2L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+//        Set<Project> projects = projectRepo.getProjectsByUserId(user1.getId());
+//        Iterator<Project> iterator = projects.iterator();
+//
+//        Long prId = null;
+//        if (iterator.hasNext()) {
+//            Project firstProject = iterator.next();
+//            prId = firstProject.getId(); // Assuming 'id' is the field you want to retrieve
+//        }
+//        if (prId!=null){
+//            projectRepo.deleteUserReferenceInProject(prId);
+//        }
+//
+//    }
+
+    @Test
+    void getUserReferenceWithProjectId(){
+        Long prId = 3L;
+
+        Project p1 =  projectRepo.findById(prId).orElseThrow(() -> new RuntimeException("Project  not found"));
+
+//         User userReference = projectRepo.getUserReferenceWithProjectId(prId);
+        System.out.println(p1.getUser());
+
     }
 }
