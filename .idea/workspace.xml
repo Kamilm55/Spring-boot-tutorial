@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81c6f4a1-2075-413f-b411-75d2f73dbee7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" afterDir="false" />
-    </list>
+    <list default="true" id="81c6f4a1-2075-413f-b411-75d2f73dbee7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +42,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Reverting in main",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "git-widget-placeholder": "NewBranch",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
