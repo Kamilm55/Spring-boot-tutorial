@@ -57,15 +57,15 @@ public class UserConfig implements CommandLineRunner {
             //not set , set is for first time , when we want to update we must get and .add
             // user1 has 2 projects which he must do
 
-            user1.getProjects().add(project1);
-            user1.getProjects().add(project2);
+//            user1.getProjects().add(project1);
+//            user1.getProjects().add(project2);
 //            userRepo.save(user1);
 
 
 //                    userRepo.saveAll(List.of(user1,user2,user3));
 
-            project1.setUser(user1);
-            project2.setUser(user1);
+//            project1.setUser(user1);
+//            project2.setUser(user1);
 //            projectRepo.save(project1);
 //            projectRepo.save(project2);
 

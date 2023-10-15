@@ -1,19 +1,15 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
-import jakarta.transaction.Transactional;
-import org.hibernate.Hibernate;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
+import java.util.Iterator;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-//@RunWith(SpringJUnit4ClassRunner.class)
-//@TransactionConfiguration(transactionManager="txMgr", defaultRollback=false)
 class ProjectRepoTest {
     private final ProjectRepo projectRepo;
     private final UserRepo userRepo;
@@ -38,16 +34,16 @@ class ProjectRepoTest {
 
     @Test
     void updateProjectByProjectStatusAndName() {
-        Project p1 = projectRepo.findById(7L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
+        Project p1 = projectRepo.findById(1L).orElseThrow(() -> new RuntimeException("Project with ID  not found"));
 //       p1.setStatus(Status.COMPLETED);
 //       p1.setProjectName("NewProject");
 //       projectRepo.save(p1);
 //  This method not working because @Transactional not working in test but it works in service and controller or in repo
 
 //      that's why i use @Transactional  in repo and update value
-       projectRepo.updateProjectStatusAndNameById(p1.getId(),"updated ",Status.WORKING);
+        projectRepo.updateProjectStatusAndNameById(p1.getId(),"updated 2 ",Status.NOT_STARTED);
 
-    ///////////// for lazy loading these not working
+        ///////////// for lazy loading these not working
 
 //        User updatedUser = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 //        Project updatedProject =  projectRepo.findById(3L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
@@ -59,9 +55,9 @@ class ProjectRepoTest {
     }
     @Test
     void getProjectsWithUserId(){
-        User user1 = userRepo.findById(7L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        User user1 = userRepo.findById(2L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 
-        Set<Project>  user1Projects =  projectRepo.getProjectsByUserId(user1.getId());
+        Set<Project> user1Projects =  projectRepo.getProjectsByUserId(user1.getId());
 
         // If collection is lazily initialized in entity we can access it only transaction (with query (not with.getProjects()))
         // because it is not fetched from db it will fetch when it is required
@@ -72,7 +68,7 @@ class ProjectRepoTest {
 
     @Test
     void deleteProjectWithId(){
-        Project p1 =  projectRepo.findById(7L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
+        Project p1 =  projectRepo.findById(2L).orElseThrow(() -> new RuntimeException("Project with ID 4 not found"));
         Long relatedUserId = p1.getUser().getId();
 
         projectRepo.deleteById(p1.getId());
@@ -82,5 +78,32 @@ class ProjectRepoTest {
 //        System.out.println(updatedUser.getProjects());
 
         // this is for fetch type eager
+    }
+    @Test
+    void deleteUserReferenceInProject(){
+        User user1 = userRepo.findById(2L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        Set<Project> projects = projectRepo.getProjectsByUserId(user1.getId());
+        Iterator<Project> iterator = projects.iterator();
+
+        Long prId = null;
+        if (iterator.hasNext()) {
+            Project firstProject = iterator.next();
+            prId = firstProject.getId(); // Assuming 'id' is the field you want to retrieve
+        }
+        if (prId!=null){
+            projectRepo.deleteUserReferenceInProject(prId);
+        }
+
+    }
+
+    @Test
+    void getUserReferenceWithProjectId(){
+        Long prId = 1L;
+
+//        Project p1 =  projectRepo.findById(prId).orElseThrow(() -> new RuntimeException("Project  not found"));
+
+//         User userReference = projectRepo.getUserReferenceWithProjectId(prId);
+//        System.out.println(p1.getUser());
+        System.out.println("p1");
     }
 }

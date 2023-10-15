@@ -35,11 +35,11 @@ public class UserService {
     @Transactional
     public void updateUserProjects() {
         // Ensure that there is a user with ID 1 in the database
-        User user1 = userRepo.findById(8L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+        User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 
         // Fetch two distinct projects
         Project p1 = projectRepo.findById(1L).orElseThrow(() -> new RuntimeException("Project with ID 1 not found"));
-        Project p2 = projectRepo.findById(8L).orElseThrow(() -> new RuntimeException("Project with ID 2 not found"));
+        Project p2 = projectRepo.findById(2L).orElseThrow(() -> new RuntimeException("Project with ID 2 not found"));
 
         // Create a set of projects
         Set<Project> user1Projects = new HashSet<>();
@@ -54,19 +54,25 @@ public class UserService {
 
         System.out.println(user1);
 
+        for (Project p : user1Projects) {
+            if(p.getUser()!=null){
+                throw new RuntimeException("There are project(s) already belong to other user! Be sure it is not related to any user or delete user's project and try again!");
+            }
+        }
+
         p1.setUser(user1); // first we must set user to projects
         p2.setUser(user1);
 
         //then save these via userRepo
         // this must be save before , because projects of user is empty , if we run at the end it updates user as empty set
         // if we run this before  and then run project updates its cascade affect and updates also user
-        System.out.println("First save this user");
-//        userRepo.save(user1);
-        System.out.println(user1);
+//        System.out.println("First save this user");
+////        userRepo.save(user1);
+//        System.out.println(user1);
 
-        System.out.println("Secondly save these projects and update");
+//        System.out.println("Secondly save these projects and update");
         //then save these via projectRepo
-        System.out.println(user1Projects);
+//        System.out.println(user1Projects);
         projectRepo.saveAll(user1Projects);
 
 //        user1.setProjects(user1Projects); // then projects to user

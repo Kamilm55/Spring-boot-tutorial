@@ -17,6 +17,7 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String projectName;
+    @Enumerated(EnumType.STRING)
     private Status status = Status.NOT_STARTED;
 
     @ManyToOne(cascade = CascadeType.PERSIST) // when we use CascadeType.ALL,REMOVE if we delete project it deletes related user , PERSIST => when we save or update it affects related entity

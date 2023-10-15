@@ -24,4 +24,13 @@ public interface ProjectRepo extends JpaRepository<Project, Long> {
 
 
     Set<Project> getProjectsByUserId(Long uid);
+
+    @Modifying
+    @Transactional
+    @Query("update Project p set p.user = null where p.id = :prId ")
+    void deleteUserReferenceInProject(Long prId);
+
+
+    @Query(" ")
+    User getUserReferenceWithProjectId(Long prId);
 }
