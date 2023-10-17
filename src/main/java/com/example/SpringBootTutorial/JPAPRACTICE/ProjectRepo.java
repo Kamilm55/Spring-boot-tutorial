@@ -22,6 +22,6 @@ public interface ProjectRepo extends JpaRepository<Project, Long> {
     @Query("update Project p set p.projectName = :newProjectName , p.status = :projectStatus where p.id = :projectId")
     void updateProjectStatusAndNameById(@Param("projectId") Long projectId, @Param("newProjectName") String newProjectName,Status projectStatus);
 
-
     Set<Project> getProjectsByUserId(Long uid);
+
 }

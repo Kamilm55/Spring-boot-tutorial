@@ -18,6 +18,13 @@ public class UserService {
         this.userRepo = userRepo;
     }
 
+    @Transactional
+    public Set<Project> getProjectsWithUserId(Long uid){
+        User user1 = userRepo.findById(uid).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+
+        return user1.getProjects() ;
+    }
+
     @Transactional // this is atomic (a unit of work) // if  error occurs rollback all operations in this method
     public void updateUserEmailById(String newEmail) {
         User user1 = userRepo.findById(1L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));

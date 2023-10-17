@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
@@ -89,5 +91,11 @@ class UserRepoTest {
     }*/
 
 
+    @Test
+    void getProjectsWithUserId(){
+        Set<Project> projectSet = userService.getProjectsWithUserId(7L);
+
+        System.out.println(projectSet);
+    }
 
 }

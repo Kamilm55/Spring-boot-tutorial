@@ -1,5 +1,6 @@
 package com.example.SpringBootTutorial.JPAPRACTICE;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,7 +20,10 @@ public class Task {
     private String description;
     private Status status = Status.NOT_STARTED;
 
-    @ManyToMany(fetch = FetchType.LAZY )
-//    @JoinColumn(name = "project_id")
+//    However, the ManyToMany association in JPA typically requires a join table to manage the relationship
+    @ManyToMany(fetch = FetchType.LAZY , cascade = CascadeType.PERSIST)
+    @JoinTable(name = "task_projects",
+            joinColumns = @JoinColumn(name = "task_id"),
+            inverseJoinColumns = @JoinColumn(name = "project_id"))
     private Set<Project> projects ;
 }
