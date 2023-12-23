@@ -56,6 +56,10 @@ class TaskRepoTest {
 In Spring Data JPA, you typically need to use the @Transactional annotation to fetch lazy-loaded elements. Lazy loading is a technique used to defer the loading of associated entities (e.g., collections) until they are actually accessed. When you access a lazy-loaded collection or property outside of an active transaction, you may encounter a LazyInitializationException because the entity manager session is closed, and the associated data cannot be fetched.
 To fetch lazy-loaded elements without encountering this exception, you need to access them within an active transaction. You can do this by adding the @Transactional annotation to the method or class that requires access to the lazy-loaded elements.
     * */
+    @Test
+    void getTaskOfProjects(){
+
+    }
 
     @Test
     void addTaskToProject(){

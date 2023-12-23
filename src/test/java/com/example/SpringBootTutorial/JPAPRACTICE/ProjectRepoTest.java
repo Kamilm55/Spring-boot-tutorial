@@ -61,7 +61,11 @@ class ProjectRepoTest {
     void getProjectsWithUserId(){
         User user1 = userRepo.findById(7L).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
 
-        Set<Project>  user1Projects =  projectRepo.getProjectsByUserId(user1.getId());
+        Set<Project>  user1Projects =  projectRepo.getProjectsByUserId(user1.getId()); // with query
+
+        // Without query not working  //  getProjectsWithUserId => in userrepotest
+        // Actually it is working // Problem is related to test class => Spring @Transactional does not work in JUnit test
+
 
         // If collection is lazily initialized in entity we can access it only transaction (with query (not with.getProjects()))
         // because it is not fetched from db it will fetch when it is required

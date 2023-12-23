@@ -6,16 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077/storage_v2/_src_/database/users.CI6mBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077/storage_v2/_src_/database/users.CI6mBg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/TaskRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/TaskRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/EmployeeController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/TaskRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/TaskRepoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/Task.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
       <recent name="com.example.SpringBootTutorial.JPAPRACTICE" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProjectRepoTest.getProjectsWithUserId">
+  <component name="RunManager" selected="Spring Boot.SpringBootTutorialApplication">
     <configuration name="ProjectRepoTest.getProjectsWithUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootTutorial" />
       <extension name="coverage">
@@ -176,10 +173,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProjectRepoTest.getProjectsWithUserId" />
         <item itemvalue="JUnit.UserRepoTest.getProjectsWithUserId" />
-        <item itemvalue="JUnit.TaskRepoTest.addTaskToProject" />
         <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
+        <item itemvalue="JUnit.ProjectRepoTest.getProjectsWithUserId" />
+        <item itemvalue="JUnit.TaskRepoTest.addTaskToProject" />
         <item itemvalue="JUnit.TaskRepoTest.createTasks" />
       </list>
     </recent_temporary>
@@ -232,7 +229,14 @@
       <workItem from="1697097649022" duration="2756000" />
       <workItem from="1697107346971" duration="1262000" />
       <workItem from="1697524118578" duration="4195000" />
-      <workItem from="1697528333759" duration="1439000" />
+      <workItem from="1697528333759" duration="1701000" />
+      <workItem from="1697728939563" duration="46000" />
+      <workItem from="1698131635304" duration="1079000" />
+      <workItem from="1698132760410" duration="318000" />
+      <workItem from="1698731944571" duration="653000" />
+      <workItem from="1698733783538" duration="25000" />
+      <workItem from="1699241114092" duration="180000" />
+      <workItem from="1703358154837" duration="2826000" />
     </task>
     <servers />
   </component>
@@ -248,7 +252,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java</url>
-          <line>115</line>
+          <line>119</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -258,8 +262,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/TaskRepoTest.java</url>
-          <line>66</line>
+          <line>70</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java</url>
+          <line>60</line>
+          <properties class="com.example.SpringBootTutorial.JPAPRACTICE.ProjectRepoTest" method="getProjectsWithUserId">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java</url>
@@ -268,7 +306,7 @@
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

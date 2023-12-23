@@ -93,9 +93,10 @@ class UserRepoTest {
 
     @Test
     void getProjectsWithUserId(){
-        Set<Project> projectSet = userService.getProjectsWithUserId(7L);
-
-        System.out.println(projectSet);
+//        Set<Project> projectSet = userService.getProjectsWithUserId(7L);
+//
+//        System.out.println(projectSet);
+        userService.getProjectsWithUserIdOnlyPrint(7L);//it is void it prints
     }
 
 }

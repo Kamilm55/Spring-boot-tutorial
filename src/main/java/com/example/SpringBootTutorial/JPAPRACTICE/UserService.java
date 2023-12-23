@@ -24,6 +24,12 @@ public class UserService {
 
         return user1.getProjects() ;
     }
+    @Transactional
+    public void getProjectsWithUserIdOnlyPrint(Long uid){
+        User user1 = userRepo.findById(uid).orElseThrow(() -> new RuntimeException("User with ID 1 not found"));
+
+        System.out.println(user1.getProjects());
+    }
 
     @Transactional // this is atomic (a unit of work) // if  error occurs rollback all operations in this method
     public void updateUserEmailById(String newEmail) {
