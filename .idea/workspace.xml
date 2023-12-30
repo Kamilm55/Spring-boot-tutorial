@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13efdf9b-549b-4d52-acc8-eb0738d47077.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T210052.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T210212.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T210236.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T210249.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T201834.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T201845.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T202941.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T202959.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/EmployeeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/ProjectRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/TaskRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/TaskRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootTutorial/JPAPRACTICE/UserRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/security/InMemorySecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/security/InMemorySecurityConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,53 +90,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringBootTutorialApplication">
-    <configuration name="ProjectRepoTest.getProjectsWithUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
-      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.ProjectRepoTest" />
-      <option name="METHOD_NAME" value="getProjectsWithUserId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #21" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="21" requestIdentifier="#21" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="TaskRepoTest.addTaskToProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
-      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.TaskRepoTest" />
-      <option name="METHOD_NAME" value="addTaskToProject" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #22" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="22" requestIdentifier="#22" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="TaskRepoTest.createTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
-      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.TaskRepoTest" />
-      <option name="METHOD_NAME" value="createTasks" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #23" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="23" requestIdentifier="#23" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="UserRepoTest.getProjectsWithUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootTutorial" />
@@ -165,19 +130,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ProjectRepoTest.getProjectsWithUserId" />
+      <item itemvalue="HTTP Request.generated-requests | #21" />
+      <item itemvalue="HTTP Request.generated-requests | #22" />
+      <item itemvalue="HTTP Request.generated-requests | #23" />
       <item itemvalue="JUnit.UserRepoTest.getProjectsWithUserId" />
-      <item itemvalue="JUnit.TaskRepoTest.addTaskToProject" />
-      <item itemvalue="JUnit.TaskRepoTest.createTasks" />
       <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepoTest.getProjectsWithUserId" />
         <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
-        <item itemvalue="JUnit.ProjectRepoTest.getProjectsWithUserId" />
-        <item itemvalue="JUnit.TaskRepoTest.addTaskToProject" />
-        <item itemvalue="JUnit.TaskRepoTest.createTasks" />
+        <item itemvalue="HTTP Request.generated-requests | #21" />
+        <item itemvalue="HTTP Request.generated-requests | #23" />
+        <item itemvalue="HTTP Request.generated-requests | #22" />
+        <item itemvalue="JUnit.UserRepoTest.getProjectsWithUserId" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +201,10 @@
       <workItem from="1698731944571" duration="653000" />
       <workItem from="1698733783538" duration="25000" />
       <workItem from="1699241114092" duration="180000" />
-      <workItem from="1703358154837" duration="2826000" />
+      <workItem from="1703358154837" duration="2950000" />
+      <workItem from="1703563768097" duration="757000" />
+      <workItem from="1703575427994" duration="140000" />
+      <workItem from="1703919044719" duration="4048000" />
     </task>
     <servers />
   </component>
