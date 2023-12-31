@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T210052.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T210212.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T210236.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-14T210249.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T201834.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T201845.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T202941.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T202959.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/security/InMemorySecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/security/InMemorySecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/InMemorySecurity/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/controller/PrivateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/InMemorySecurity/controller/PrivateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/InMemorySecurity/controller/PublicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/security/InMemorySecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/SpringSecurity/InMemorySecurity/InMemorySecurity/security/InMemorySecurityConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +197,8 @@
       <workItem from="1703358154837" duration="2950000" />
       <workItem from="1703563768097" duration="757000" />
       <workItem from="1703575427994" duration="140000" />
-      <workItem from="1703919044719" duration="4048000" />
+      <workItem from="1703919044719" duration="4185000" />
+      <workItem from="1704003124084" duration="851000" />
     </task>
     <servers />
   </component>

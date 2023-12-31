@@ -1,4 +1,4 @@
-package com.example.SpringBootTutorial.SpringSecurity.InMemorySecurity.controller;
+package com.example.SpringBootTutorial.SpringSecurity.InMemorySecurity.InMemorySecurity.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package com.example.SpringBootTutorial.SpringSecurity.InMemorySecurity.security;
+package com.example.SpringBootTutorial.SpringSecurity.InMemorySecurity.InMemorySecurity.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
