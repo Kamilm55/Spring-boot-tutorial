@@ -25,10 +25,7 @@ public class BasicAuthConfig {
     }
 
 
-//    @Bean
-//    public AuthenticationManager authenticationManager(){
-//
-//    }
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity security, HandlerMappingIntrospector introspector) throws Exception{
 
@@ -38,23 +35,25 @@ public class BasicAuthConfig {
         security
                 .headers(x -> x.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
                 .csrf(csrfConfig ->
-                        csrfConfig.ignoringRequestMatchers(mvcRequestBuilder.pattern("/public/**"))
+                        csrfConfig.ignoringRequestMatchers(mvcRequestBuilder.pattern("/public/**"),
+                                        mvcRequestBuilder.pattern("/private/**"))
                                 .ignoringRequestMatchers(PathRequest.toH2Console()))
                 .authorizeHttpRequests(x ->
-                      x
-                        .requestMatchers(mvcRequestBuilder.pattern("/public/**")).permitAll()
-                        .requestMatchers(mvcRequestBuilder.pattern("/private/admin/**")).hasRole(Role.ADMIN.name())
-                        .requestMatchers(mvcRequestBuilder.pattern("/private/**")).hasAnyRole(
-                                      Role.USER.name(),
-                                      Role.TEACHER.name(),
-                                      Role.ADMIN.name())
-                        .requestMatchers(mvcRequestBuilder.pattern("/private/addCourse")).hasAnyRole(
-                                      Role.TEACHER.name(),
-                                      Role.ADMIN.name())
-                        .requestMatchers(mvcRequestBuilder.pattern("/private/teacher/**")).hasRole(Role.TEACHER.name())
-                        .requestMatchers(mvcRequestBuilder.pattern("/private/user/**")).hasRole(Role.USER.name())
-                        .requestMatchers(PathRequest.toH2Console()).permitAll()
-                        .anyRequest().authenticated()
+                        x
+                                .requestMatchers(mvcRequestBuilder.pattern("/public/**")).permitAll()
+                                .requestMatchers(mvcRequestBuilder.pattern("/private/addCourse")).hasAnyRole(
+                                        Role.TEACHER.name(),
+                                        Role.ADMIN.name())
+                                .requestMatchers(mvcRequestBuilder.pattern("/private/user/**")).hasRole(Role.USER.name())
+                                .requestMatchers(mvcRequestBuilder.pattern("/private/teacher/**")).hasRole(Role.TEACHER.name())
+                                .requestMatchers(mvcRequestBuilder.pattern("/private/admin/**")).hasRole(Role.ADMIN.name())
+                                .requestMatchers(mvcRequestBuilder.pattern("/private/**")).hasAnyRole(
+                                        Role.USER.name(),
+                                        Role.TEACHER.name(),
+                                        Role.ADMIN.name()
+                                )
+                                .requestMatchers(PathRequest.toH2Console()).permitAll()
+                                .anyRequest().authenticated()
                 )
                 .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
@@ -64,3 +63,19 @@ public class BasicAuthConfig {
 
     }
 }
+
+/*     x
+                        .requestMatchers(mvcRequestBuilder.pattern("/public/**")).permitAll()
+                        .requestMatchers(mvcRequestBuilder.pattern("/private/admin/**")).hasRole(Role.ADMIN.name())
+                      .requestMatchers(mvcRequestBuilder.pattern("/private/addCourse")).hasAnyRole(
+                                      Role.TEACHER.name(),
+                                      Role.ADMIN.name())
+                        .requestMatchers(mvcRequestBuilder.pattern("/private/**")).hasAnyRole(
+                                      Role.USER.name(),
+                                      Role.TEACHER.name(),
+                                      Role.ADMIN.name()
+                                      )
+                        .requestMatchers(mvcRequestBuilder.pattern("/private/teacher/**")).hasRole(Role.TEACHER.name())
+                        .requestMatchers(mvcRequestBuilder.pattern("/private/user/**")).hasRole(Role.USER.name())
+                        .requestMatchers(PathRequest.toH2Console()).permitAll()
+                        .anyRequest().authenticated()*/

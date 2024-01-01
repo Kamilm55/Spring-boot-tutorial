@@ -17,6 +17,7 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class BasicAuthApplication implements CommandLineRunner {
 	private final UserService userService;
+	private final UserRepository userRepository;
 	public static void main(String[] args) {
 		SpringApplication.run(BasicAuthApplication.class, args);
 	}
@@ -39,10 +40,14 @@ public class BasicAuthApplication implements CommandLineRunner {
 		CreateUserRequest adminAndTeacher = new CreateUserRequest("adminAndTeacher","adminAndTeacher","pass", Set.of(Role.ADMIN,Role.TEACHER));
 		userService.createUser(adminAndTeacher);
 
-		System.out.println(userService.getUserByUsername("Kamil_user"));
-		System.out.println(userService.getUserByUsername("teacher"));
-		System.out.println(userService.getUserByUsername("admin"));
-		System.out.println(userService.getUserByUsername("adminAndTeacher"));
+//		System.out.println(userService.getUserByUsername("Kamil_user"));
+//		System.out.println(userService.getUserByUsername("teacher"));
+//		System.out.println(userService.getUserByUsername("admin"));
+//		System.out.println(userService.getUserByUsername("adminAndTeacher"));
+
+		System.out.println(userRepository.getRoleOfUserByUsername("teacher"));
+		System.out.println(userRepository.getRoleOfUserByUsername("adminAndTeacher"));
+
 
 	}
 }
