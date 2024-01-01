@@ -3,8 +3,10 @@ package com.example.SpringBootTutorial.basicauth.model;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.Collection;
 import java.util.Set;
 
 @Data
@@ -15,6 +17,14 @@ import java.util.Set;
 @Table(name = "users")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class User implements UserDetails {
+    //Learn:
+    //  Provides core user information.
+    //  Implementations are not used directly by Spring Security for security purposes.
+    //  They simply store user information which is later encapsulated into Authentication objects.
+    //  This allows non-security related user information (such as email addresses, telephone numbers etc) to be stored
+    //  in a convenient location.
+    //  Concrete implementations must take particular care to ensure the non-null contract detailed for each method
+    //  is enforced. See User for a reference implementation (which you might like to extend or use in your code).
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,10 +46,11 @@ public class User implements UserDetails {
     // The owning entity (User in this case) has a foreign key reference to the collection table.
     @ElementCollection(targetClass = Role.class , fetch = FetchType.EAGER)
     @JoinTable(name = "authorities",joinColumns = @JoinColumn(name = "user_id"))
-    @Column(name = "role", nullable = false)
+    @Column(name = "role", nullable = false) // every user ("user_id") must be reference role
     @Enumerated(EnumType.STRING)
     Set<Role> authorities;
 
+    //Learn: @Data is done following methods
 //    @Override
 //    public Collection<? extends GrantedAuthority> getAuthorities() {
 //        return authorities;

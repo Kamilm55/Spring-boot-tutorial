@@ -5,13 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/public")
-public class PublicController {
+@RequestMapping(path = "/private/user")
+public class UserController {
 
-    @PostMapping("/publicMethod")
-    public String publicMethod(){
-        return "WORKS public method";
+    @PostMapping("/makeRequestForBecomeTeacher")
+    public String makeRequestForBecomeTeacher(){
+        return "you send request to become teacher now (As a user)" ;
     }
-
 
 }

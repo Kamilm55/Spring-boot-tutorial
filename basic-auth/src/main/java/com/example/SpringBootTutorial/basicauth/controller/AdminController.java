@@ -5,13 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/public")
-public class PublicController {
+@RequestMapping(path = "/private/admin")
+public class AdminController {
 
-    @PostMapping("/publicMethod")
-    public String publicMethod(){
-        return "WORKS public method";
+    @PostMapping("/acceptRequestForBecomeTeacher")
+    public String acceptBecomeTeacherRequest(){
+        return "Success! you are teacher now (As an admin)";
     }
-
-
 }

@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203236.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203309.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/BasicAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/BasicAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/config/BasicAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/config/BasicAuthConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/config/BasicAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/BasicAuthConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/controller/PrivateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/controller/PrivateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/controller/PublicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +35,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1-sources.jar!/org/springframework/security/core/userdetails/User.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,35 +64,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/Downloads/SpringBootTutorial/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "f73fcf68e0a644d5cf1c9d4c7c112773",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Downloads/SpringBootTutorial/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f73fcf68e0a644d5cf1c9d4c7c112773&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Downloads\SpringBootTutorial\basic-auth\src\main\java\com\example\SpringBootTutorial\basicauth" />
@@ -96,31 +104,25 @@
       <recent name="com.example.SpringBootTutorial.JPAPRACTICE" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.BasicAuthApplication">
     <configuration name="generated-requests | #21" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="21" requestIdentifier="#21" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #22" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="22" requestIdentifier="#22" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #23" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="23" requestIdentifier="#23" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="UserRepoTest.getProjectsWithUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.SpringBootTutorial.JPAPRACTICE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE" />
-      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootTutorial.JPAPRACTICE.UserRepoTest" />
-      <option name="METHOD_NAME" value="getProjectsWithUserId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #26" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="26" requestIdentifier="#26" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #27" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="27" requestIdentifier="#27" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="BasicAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="basic-auth" />
@@ -144,20 +146,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.generated-requests | #26" />
+      <item itemvalue="HTTP Request.generated-requests | #27" />
       <item itemvalue="HTTP Request.generated-requests | #21" />
-      <item itemvalue="HTTP Request.generated-requests | #22" />
       <item itemvalue="HTTP Request.generated-requests | #23" />
-      <item itemvalue="JUnit.UserRepoTest.getProjectsWithUserId" />
       <item itemvalue="Spring Boot.BasicAuthApplication" />
       <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #27" />
+        <item itemvalue="HTTP Request.generated-requests | #26" />
         <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
         <item itemvalue="HTTP Request.generated-requests | #21" />
         <item itemvalue="HTTP Request.generated-requests | #23" />
-        <item itemvalue="HTTP Request.generated-requests | #22" />
-        <item itemvalue="JUnit.UserRepoTest.getProjectsWithUserId" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +224,8 @@
       <workItem from="1703919044719" duration="4185000" />
       <workItem from="1704003124084" duration="967000" />
       <workItem from="1704041886498" duration="1440000" />
-      <workItem from="1704095413798" duration="4541000" />
+      <workItem from="1704095413798" duration="4765000" />
+      <workItem from="1704113451206" duration="3979000" />
     </task>
     <servers />
   </component>

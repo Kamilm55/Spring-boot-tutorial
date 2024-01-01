@@ -7,5 +7,5 @@ import com.example.SpringBootTutorial.basicauth.model.User;
 public interface UserService {
     User getUserByUsername(String username);
     void createUser(CreateUserRequest userRequest);
-    User getUser(Long id);
+    User getUserById(Long id);
 }
