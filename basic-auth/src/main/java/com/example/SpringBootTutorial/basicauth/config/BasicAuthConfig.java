@@ -26,20 +26,20 @@ public class BasicAuthConfig {
 //    public AuthenticationManager authenticationManager(){
 //
 //    }
-    @Bean
-    public SecurityFilterChain filterChain(HttpSecurity security) throws Exception{
-        security
-                .headers(x -> x.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
-                .csrf(AbstractHttpConfigurer::disable)
-                .formLogin(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(x -> x.requestMatchers("/public/**", "/auth/**").permitAll())
-                .authorizeHttpRequests(x -> x.requestMatchers("/private/teacher/**").hasRole("TEACHER"))
-                .authorizeHttpRequests(x -> x.requestMatchers("/private/admin/**").hasRole("ADMIN"))
-                .authorizeHttpRequests(x -> x.requestMatchers("/private/addCourse").hasAnyRole("ADMIN","TEACHER"))
-                .authorizeHttpRequests(x -> x.requestMatchers("/private/doQuiz").hasAnyRole("USER"))
-                .authorizeHttpRequests(x -> x.anyRequest().authenticated()) // for any user that has USER or ADMIN or TEACHER role
-                .httpBasic(Customizer.withDefaults());
-
-        return security.build();
-    }
+//    @Bean
+//    public SecurityFilterChain filterChain(HttpSecurity security) throws Exception{
+//        security
+//                .headers(x -> x.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
+//                .csrf(AbstractHttpConfigurer::disable)
+//                .formLogin(AbstractHttpConfigurer::disable)
+//                .authorizeHttpRequests(x -> x.requestMatchers("/public/**", "/auth/**").permitAll())
+//                .authorizeHttpRequests(x -> x.requestMatchers("/private/teacher/**").hasRole("TEACHER"))
+//                .authorizeHttpRequests(x -> x.requestMatchers("/private/admin/**").hasRole("ADMIN"))
+//                .authorizeHttpRequests(x -> x.requestMatchers("/private/addCourse").hasAnyRole("ADMIN","TEACHER"))
+//                .authorizeHttpRequests(x -> x.requestMatchers("/private/doQuiz").hasAnyRole("USER"))
+//                .authorizeHttpRequests(x -> x.anyRequest().authenticated()) // for any user that has USER or ADMIN or TEACHER role
+//                .httpBasic(Customizer.withDefaults());
+//
+//        return security.build();
+//    }
 }

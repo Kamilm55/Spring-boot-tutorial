@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBootTutorial.iml" filepath="$PROJECT_DIR$/.idea/SpringBootTutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic-auth/basic-auth.iml" filepath="$PROJECT_DIR$/basic-auth/basic-auth.iml" />
     </modules>
   </component>
 </project>
