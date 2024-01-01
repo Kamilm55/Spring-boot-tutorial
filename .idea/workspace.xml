@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203317.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203519.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/BasicAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/BasicAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/BasicAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/BasicAuthConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +218,8 @@
       <workItem from="1704041886498" duration="1440000" />
       <workItem from="1704095413798" duration="4765000" />
       <workItem from="1704113451206" duration="4142000" />
-      <workItem from="1704120769642" duration="4585000" />
+      <workItem from="1704120769642" duration="4729000" />
+      <workItem from="1704130200857" duration="1773000" />
     </task>
     <servers />
   </component>
