@@ -45,9 +45,14 @@ public class BasicAuthApplication implements CommandLineRunner {
 //		System.out.println(userService.getUserByUsername("admin"));
 //		System.out.println(userService.getUserByUsername("adminAndTeacher"));
 
-		System.out.println(userRepository.getRoleOfUserByUsername("teacher"));
-		System.out.println(userRepository.getRoleOfUserByUsername("adminAndTeacher"));
+//		System.out.println(userRepository.getRoleOfUserByUsername("teacher"));
+//		System.out.println(userRepository.getRoleOfUserByUsername("adminAndTeacher"));
 
 
+//		System.out.println(Role.ROLE_USER);
+//		System.out.println(Role.ROLE_USER.getValue());
+//		System.out.println(Role.ROLE_USER.name());
+		//Learn:
+		// When you insert an enum into a database using a Spring Data JPA repository, the default behavior is to store the name of the enum constant in the database. The name() method, which is part of the Enum class, is used to retrieve the name of the enum constant.
 	}
 }

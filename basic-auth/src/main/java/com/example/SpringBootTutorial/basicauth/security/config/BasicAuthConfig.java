@@ -2,23 +2,16 @@ package com.example.SpringBootTutorial.basicauth.security.config;
 
 import com.example.SpringBootTutorial.basicauth.model.Role;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.access.AccessDecisionVoter;
-import org.springframework.security.access.vote.AffirmativeBased;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-
-import java.util.List;
 
 @Configuration
 @EnableWebSecurity
@@ -31,10 +24,25 @@ public class BasicAuthConfig {
     }
 
     //todo: Check why config cannot know roles , it can be hasAnyRole don't return true when role is inside set
+    // Learn: -> ROLE_USER("USER") role must be in this form
 
-    // DEBUG:
+
+    //todo: Where is DaoAuthenticationProvider and AuthenticationManager ?
+    //Learn:
+    // When you use the UserDetailsService, Spring Security is able to use it
+    // to load user details, and it internally creates an AuthenticationManager for you.
+    // The DaoAuthenticationProvider is often used behind the scenes
+    // when you configure authentication using UserDetailsService.
+    // AuthenticationManager: Spring Security needs an AuthenticationManager to perform authentication. If you don't explicitly configure one, it will create a default one for you. This default AuthenticationManager typically uses a ProviderManager under the hood.
+    // DaoAuthenticationProvider: When you configure authentication using UserDetailsService, a DaoAuthenticationProvider is automatically added to the AuthenticationManager. This provider uses your UserDetailsService to load user details and performs the actual authentication.
+    // by default, if you don't specify a custom AuthenticationManager and you configure authentication using a UserDetailsService, Spring Security will use a DaoAuthenticationProvider behind the scenes. The DaoAuthenticationProvider is a common choice for authentication when user details are stored in a data source, such as a database.
+    // The DaoAuthenticationProvider is designed to work with a UserDetailsService to load user details and perform authentication based on those details. It internally uses an instance of PasswordEncoder (typically BCryptPasswordEncoder or another suitable implementation) to handle password encoding and matching.
+
+
+    //to DEBUG:
 //    @Autowired
 //    private CustomAccessDecisionManager customAccessDecisionManager;
+
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity security) throws Exception{
@@ -47,22 +55,20 @@ public class BasicAuthConfig {
                         {
 
                             req
-//                                .requestMatchers("/public/**").permitAll()
-//                                .requestMatchers("/private/addCourse").hasAnyRole(
-//                                        Role.TEACHER.name(),
-//                                        Role.ADMIN.name())
-//                                .requestMatchers("/private/user/**").hasRole(Role.USER.name())
-//                                .requestMatchers("/private/teacher/**").hasRole(Role.TEACHER.name())
-////                                .requestMatchers("/private/admin/**").hasRole(Role.ADMIN.name())
-                                    .requestMatchers("/private/**").hasAnyRole(
-                                            Role.ROLE_USER.getValue(),
-                                            Role.ROLE_TEACHER.getValue(),
-                                            Role.ROLE_ADMIN.getValue()
-                                    );
+                                .requestMatchers("/public/**").permitAll()
 
-                                   req.anyRequest().authenticated();
-
-
+                                .requestMatchers("/private/addCourse").hasAnyRole( // the most specific on the top
+                                        Role.ROLE_TEACHER.getValue(),
+                                        Role.ROLE_ADMIN.getValue())
+                                .requestMatchers("/private/user/**").hasRole(Role.ROLE_USER.getValue())
+                                .requestMatchers("/private/teacher/**").hasRole(Role.ROLE_TEACHER.getValue())
+                                .requestMatchers("/private/admin/**").hasRole(Role.ROLE_ADMIN.getValue())
+                                .requestMatchers("/private/**").hasAnyRole(
+                                    Role.ROLE_USER.getValue(),
+                                    Role.ROLE_TEACHER.getValue(),
+                                    Role.ROLE_ADMIN.getValue()
+                                 )
+                                 .anyRequest().authenticated();// rest of the non-secured url for roles but open for authorized
                         }
                 )
                 .httpBasic(Customizer.withDefaults());
