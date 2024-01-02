@@ -2,7 +2,7 @@
 #  <div align="center"> Spring Security </div>
 ## <div align="center"> Architecture of Spring Security </div>
 
-<img src="C:\Users\User\Downloads\SpringBootTutorial\spring-security (1).png">
+<img src="https://github.com/folksdev/spring-security/blob/master/spring-security.png?raw=true">
 
 ## <div align="center"> 1. Comparison of Spring Security Authentication Mechanisms</div>
 
