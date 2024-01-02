@@ -1,4 +1,9 @@
+
 #  <div align="center"> Spring Security </div>
+## <div align="center"> Architecture of Spring Security </div>
+
+<img src="C:\Users\User\Downloads\SpringBootTutorial\spring-security (1).png">
+
 ## <div align="center"> 1. Comparison of Spring Security Authentication Mechanisms</div>
 
 Let's discuss the differences, advantages, disadvantages, and use cases for three common types of security mechanisms in Spring Security: In-Memory Authentication, Basic Authentication with DAO (Data Access Object) Provider and UserDetails, and JWT (JSON Web Token) Token-based Security.
