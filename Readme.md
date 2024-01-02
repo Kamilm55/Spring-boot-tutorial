@@ -5,16 +5,16 @@ Let's discuss the differences, advantages, disadvantages, and use cases for thre
    Description:
    In-Memory Authentication is a simple approach where user credentials are stored in memory. User details, including usernames, passwords, and roles, are configured directly in the application code or configuration files.
 
-## Advantages:
+### Advantages:
 Simplicity and ease of setup.
 Suitable for small applications or prototypes.
 
-## Disadvantages:
+### Disadvantages:
 Not suitable for production with a large number of users.
 User credentials need to be hard-coded in the application, which is not secure.
 Changes in user credentials require a restart of the application.
 
-## Use Cases:
+### Use Cases:
 Rapid prototyping.
 Small applications with a limited number of users.
 
@@ -22,16 +22,16 @@ Small applications with a limited number of users.
    Description:
    This approach involves using a UserDetailsService to load user details from a data source (such as a database). The DaoAuthenticationProvider is commonly used behind the scenes to handle authentication.
 
-## Advantages:
+### Advantages:
 Supports a dynamic user base stored in a database.
 Password encoding and validation are handled by the DaoAuthenticationProvider.
 Configurable and customizable.
 
-## Disadvantages:
+### Disadvantages:
 Requires a database or external user data source.
 Slightly more complex setup compared to in-memory authentication.
 
-## Use Cases:
+### Use Cases:
 Applications with a growing number of users.
 When user details are stored in a database.
 
@@ -39,17 +39,17 @@ When user details are stored in a database.
    Description:
    JWT Token-based Security uses JSON Web Tokens to authenticate and authorize users. The server issues a token upon successful authentication, and the client includes this token in the headers of subsequent requests.
 
-## Advantages:
+### Advantages:
 Stateless: No need to store sessions on the server.
 Scalable for microservices architectures.
 Suitable for Single Sign-On (SSO) scenarios.
 
-## Disadvantages:
+### Disadvantages:
 Requires additional configuration and setup.
 Token revocation can be challenging.
 Token payload size can become an issue with a large amount of data.
 
-## Use Cases:
+### Use Cases:
 Scalable applications with distributed microservices.
 Single Sign-On scenarios.
 Stateless API authentication.
