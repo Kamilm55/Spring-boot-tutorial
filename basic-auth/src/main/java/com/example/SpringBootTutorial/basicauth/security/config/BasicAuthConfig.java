@@ -1,9 +1,13 @@
 package com.example.SpringBootTutorial.basicauth.security.config;
 
 import com.example.SpringBootTutorial.basicauth.model.Role;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.access.AccessDecisionVoter;
+import org.springframework.security.access.vote.AffirmativeBased;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,16 +18,23 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+import java.util.List;
+
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
+@Slf4j
 public class BasicAuthConfig {
     @Bean
     public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
 
+    //todo: Check why config cannot know roles , it can be hasAnyRole don't return true when role is inside set
 
+    // DEBUG:
+//    @Autowired
+//    private CustomAccessDecisionManager customAccessDecisionManager;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity security) throws Exception{
@@ -31,21 +42,28 @@ public class BasicAuthConfig {
                 .headers(x -> x.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
                 .csrf(AbstractHttpConfigurer::disable)
                 .formLogin(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(x ->
-                        x
+                .authorizeHttpRequests(
+                  req ->
+                        {
+
+                            req
 //                                .requestMatchers("/public/**").permitAll()
 //                                .requestMatchers("/private/addCourse").hasAnyRole(
 //                                        Role.TEACHER.name(),
 //                                        Role.ADMIN.name())
 //                                .requestMatchers("/private/user/**").hasRole(Role.USER.name())
 //                                .requestMatchers("/private/teacher/**").hasRole(Role.TEACHER.name())
-//                                .requestMatchers("/private/admin/**").hasRole(Role.ADMIN.name())
-                                .requestMatchers("/private/**").hasAnyRole(
-                                        Role.USER.name(),
-                                        Role.TEACHER.name(),
-                                        Role.ADMIN.name()
-                                )
-                                .anyRequest().authenticated()
+////                                .requestMatchers("/private/admin/**").hasRole(Role.ADMIN.name())
+                                    .requestMatchers("/private/**").hasAnyRole(
+                                            Role.ROLE_USER.getValue(),
+                                            Role.ROLE_TEACHER.getValue(),
+                                            Role.ROLE_ADMIN.getValue()
+                                    );
+
+                                   req.anyRequest().authenticated();
+
+
+                        }
                 )
                 .httpBasic(Customizer.withDefaults());
 

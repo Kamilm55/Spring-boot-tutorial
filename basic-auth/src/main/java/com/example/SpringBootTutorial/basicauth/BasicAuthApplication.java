@@ -28,16 +28,16 @@ public class BasicAuthApplication implements CommandLineRunner {
 	}
 
 	void createDummyData(){
-		CreateUserRequest user1 = new CreateUserRequest("Kamil","Kamil_user","pass", Set.of(Role.USER));
+		CreateUserRequest user1 = new CreateUserRequest("Kamil","Kamil_user","pass", Set.of(Role.ROLE_USER));
 		userService.createUser(user1);
 
-		CreateUserRequest teacher = new CreateUserRequest("teacher","teacher","pass", Set.of(Role.TEACHER));
+		CreateUserRequest teacher = new CreateUserRequest("teacher","teacher","pass", Set.of(Role.ROLE_TEACHER));
 		userService.createUser(teacher);
 
-		CreateUserRequest admin = new CreateUserRequest("admin","admin","pass", Set.of(Role.ADMIN));
+		CreateUserRequest admin = new CreateUserRequest("admin","admin","pass", Set.of(Role.ROLE_ADMIN));
 		userService.createUser(admin);
 
-		CreateUserRequest adminAndTeacher = new CreateUserRequest("adminAndTeacher","adminAndTeacher","pass", Set.of(Role.ADMIN,Role.TEACHER));
+		CreateUserRequest adminAndTeacher = new CreateUserRequest("adminAndTeacher","adminAndTeacher","pass", Set.of(Role.ROLE_ADMIN,Role.ROLE_TEACHER));
 		userService.createUser(adminAndTeacher);
 
 //		System.out.println(userService.getUserByUsername("Kamil_user"));

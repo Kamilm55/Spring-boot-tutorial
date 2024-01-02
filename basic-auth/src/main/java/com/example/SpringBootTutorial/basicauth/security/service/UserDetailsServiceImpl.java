@@ -1,4 +1,4 @@
-package com.example.SpringBootTutorial.basicauth.security.config.service;
+package com.example.SpringBootTutorial.basicauth.security.service;
 
 import com.example.SpringBootTutorial.basicauth.service.UserService;
 import lombok.RequiredArgsConstructor;

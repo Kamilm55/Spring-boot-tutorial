@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/BasicAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/BasicAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/model/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/BasicAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/BasicAuthConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/service/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic-auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +221,9 @@
       <workItem from="1704095413798" duration="4765000" />
       <workItem from="1704113451206" duration="4142000" />
       <workItem from="1704120769642" duration="4729000" />
-      <workItem from="1704130200857" duration="1773000" />
+      <workItem from="1704130200857" duration="1837000" />
+      <workItem from="1704132603815" duration="10000" />
+      <workItem from="1704186243007" duration="3058000" />
     </task>
     <servers />
   </component>
