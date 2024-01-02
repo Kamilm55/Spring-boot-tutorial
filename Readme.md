@@ -1,5 +1,5 @@
 #  <div align="center"> Spring Security </div>
-## <div align="center"> 1.Comparison of Spring Security Authentication Mechanisms</div>
+## <div align="center"> 1. Comparison of Spring Security Authentication Mechanisms</div>
 
 Let's discuss the differences, advantages, disadvantages, and use cases for three common types of security mechanisms in Spring Security: In-Memory Authentication, Basic Authentication with DAO (Data Access Object) Provider and UserDetails, and JWT (JSON Web Token) Token-based Security.
 
@@ -73,7 +73,7 @@ For JWT Token-based Security, credentials are sent in the request body or header
 ## Conclusion:
 The choice of security mechanism depends on factors such as the size and nature of your application, user base, and the desired level of security and scalability. Each approach has its advantages and disadvantages, and the selection should align with the specific requirements of your application.
 
-# 2.Stateless Web Applications and Authentication in Web Security
+# 2. Stateless Web Applications and Authentication in Web Security
 
 In the context of web applications and security, "stateless" refers to the idea that each request from a client to a server is independent and carries with it all the information needed to understand and fulfill that request. In other words, the server does not need to maintain any information about the client's state between requests. Each request is treated in isolation, and the server does not rely on any previous requests to process the current one.
 
