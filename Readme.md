@@ -1,4 +1,6 @@
-# Spring Security 
+#  <div align="center"> Spring Security </div>
+## <div align="center"> Comparison of Spring Security Authentication Mechanisms</div>
+
 Let's discuss the differences, advantages, disadvantages, and use cases for three common types of security mechanisms in Spring Security: In-Memory Authentication, Basic Authentication with DAO (Data Access Object) Provider and UserDetails, and JWT (JSON Web Token) Token-based Security.
 
 1. In-Memory Authentication:
@@ -54,8 +56,7 @@ Let's discuss the differences, advantages, disadvantages, and use cases for thre
 - Single Sign-On scenarios.
 - Stateless API authentication.
 
-## Frontend Communication:
-## Sending Credentials:
+## Frontend Communication (Sending Credentials):
 
 In Basic Authentication and In-Memory Authentication, credentials (username and password) are typically sent in the Authorization header using the "Basic" authentication scheme.
 For JWT Token-based Security, credentials are sent in the request body or headers (commonly Authorization header) when obtaining the initial token. Subsequent requests include the token for authentication.
