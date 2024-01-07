@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/JwtAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/JwtAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/BasicAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-auth/src/main/java/com/example/SpringBootTutorial/basicauth/security/config/BasicAuthConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -65,14 +69,14 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/Downloads/SpringBootTutorial/Jwt-auth",
+    "last_opened_file_path": "C:/Users/User/Downloads/SpringBootTutorial/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "f73fcf68e0a644d5cf1c9d4c7c112773",
+    "spring.configuration.checksum": "014e4990eda7efadca95b88330e1187b",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -84,6 +88,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Downloads\SpringBootTutorial\Jwt-auth\src\main\java\com\example\SpringBootTutorial\Jwtauth" />
       <recent name="C:\Users\User\Downloads\SpringBootTutorial\basic-auth\src\main\java\com\example\SpringBootTutorial\basicauth" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -105,9 +110,6 @@
   </component>
   <component name="RunManager" selected="Spring Boot.JwtAuthApplication">
     <configuration name="generated-requests | #21" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="21" requestIdentifier="#21" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #23" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="23" requestIdentifier="#23" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #26" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="26" requestIdentifier="#26" runType="Run single request">
@@ -144,22 +146,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Jwt-auth: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="Jwt-auth/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.Jwt-auth: Compose Deployment" />
       <item itemvalue="HTTP Request.generated-requests | #26" />
       <item itemvalue="HTTP Request.generated-requests | #27" />
       <item itemvalue="HTTP Request.generated-requests | #21" />
-      <item itemvalue="HTTP Request.generated-requests | #23" />
       <item itemvalue="Spring Boot.JwtAuthApplication" />
       <item itemvalue="Spring Boot.BasicAuthApplication" />
       <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Jwt-auth: Compose Deployment" />
         <item itemvalue="HTTP Request.generated-requests | #27" />
         <item itemvalue="HTTP Request.generated-requests | #26" />
         <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
         <item itemvalue="HTTP Request.generated-requests | #21" />
-        <item itemvalue="HTTP Request.generated-requests | #23" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +244,10 @@
       <workItem from="1704130200857" duration="1837000" />
       <workItem from="1704132603815" duration="10000" />
       <workItem from="1704186243007" duration="3268000" />
-      <workItem from="1704197231524" duration="5387000" />
+      <workItem from="1704197231524" duration="5579000" />
+      <workItem from="1704272345258" duration="1779000" />
+      <workItem from="1704519631030" duration="579000" />
+      <workItem from="1704642920452" duration="6489000" />
     </task>
     <servers />
   </component>

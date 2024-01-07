@@ -49,7 +49,6 @@ public class BasicAuthConfig {
         security
                 .headers(x -> x.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
                 .csrf(AbstractHttpConfigurer::disable)
-                .formLogin(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(
                   req ->
                         {
@@ -71,7 +70,8 @@ public class BasicAuthConfig {
                                  .anyRequest().authenticated();// rest of the non-secured url for roles but open for authorized
                         }
                 )
-                .httpBasic(Customizer.withDefaults());
+                .httpBasic(Customizer.withDefaults())
+                .formLogin(Customizer.withDefaults()); // it generates custom login , logout page
 
         return security.build();
     }

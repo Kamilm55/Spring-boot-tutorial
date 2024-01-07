@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: no  # Set to 'no' for manual restart
+    container_name: jwt-auth-db-container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootMysql
+      MYSQL_DATABASE: jwt-auth-db
+      MYSQL_USER: kamil
+      MYSQL_PASSWORD: kamil123
+    ports:
+      - '3300:3306'
