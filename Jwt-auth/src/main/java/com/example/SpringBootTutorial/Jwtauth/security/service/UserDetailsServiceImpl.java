@@ -18,7 +18,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
 
-
         log.info("Loading user details for username: {}", username);
         UserDetails userDetails = userService.getUserByUsername(username);
         log.info("User details loaded successfully for username: {}", username);

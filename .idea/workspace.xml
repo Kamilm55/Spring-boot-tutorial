@@ -7,6 +7,10 @@
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/JwtAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/JwtAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/service/JwtTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/service/AccessTokenManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/service/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/util/PublicAndPrivateKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/util/PublicAndPrivateKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -21,6 +25,7 @@
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -56,37 +61,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Downloads/SpringBootTutorial/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;014e4990eda7efadca95b88330e1187b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/User/Downloads/SpringBootTutorial/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "014e4990eda7efadca95b88330e1187b",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;,
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Downloads\SpringBootTutorial\Jwt-auth\src\main\java\com\example\SpringBootTutorial\Jwtauth\service" />
       <recent name="C:\Users\User\Downloads\SpringBootTutorial\Jwt-auth\src\main\java\com\example\SpringBootTutorial\Jwtauth" />
       <recent name="C:\Users\User\Downloads\SpringBootTutorial\basic-auth\src\main\java\com\example\SpringBootTutorial\basicauth" />
     </key>
@@ -249,7 +255,8 @@
       <workItem from="1704272345258" duration="1779000" />
       <workItem from="1704519631030" duration="579000" />
       <workItem from="1704642920452" duration="6675000" />
-      <workItem from="1704812786458" duration="3510000" />
+      <workItem from="1704812786458" duration="3655000" />
+      <workItem from="1704821056974" duration="8063000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,9 @@ package com.example.SpringBootTutorial.Jwtauth;
 
 import com.example.SpringBootTutorial.Jwtauth.dto.CreateUserRequest;
 import com.example.SpringBootTutorial.Jwtauth.model.Role;
+import com.example.SpringBootTutorial.Jwtauth.model.User;
 import com.example.SpringBootTutorial.Jwtauth.model.properties.security.SecurityProperties;
+import com.example.SpringBootTutorial.Jwtauth.security.service.AccessTokenManager;
 import com.example.SpringBootTutorial.Jwtauth.service.UserService;
 import com.example.SpringBootTutorial.Jwtauth.util.PublicAndPrivateKey;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +23,7 @@ import java.util.Set;
 public class JwtAuthApplication implements CommandLineRunner {
 	private final UserService userService;
 	private final SecurityProperties securityProperties;
+	private final AccessTokenManager accessTokenManager;
 
 	public static void main(String[] args) {
 		SpringApplication.run(JwtAuthApplication.class, args);
@@ -29,15 +32,21 @@ public class JwtAuthApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 //		createDummyData();
-		System.out.println(securityProperties.getJwt().getPrivateKey());
-		System.out.println(securityProperties.getJwt().getPublicKey());
+//		generateAndReadJwtToken();
 
-		System.out.println("Prepared keys");
-		System.out.println(PublicAndPrivateKey.getPrivateKey());
-		System.out.println(PublicAndPrivateKey.getPublicKey());
+	}
+	private void  generateAndReadJwtToken(){
+		User userAdmin = userService.getUserByUsername("adminAndTeacher");
 
+		String token = accessTokenManager.generate(userAdmin);
 
+		System.out.println(token);
 
+		Long userId = Long.valueOf(
+				accessTokenManager.read(token).get("sub", String.class)
+		);
+
+		System.out.println("Your user data: " + userService.getUserById(userId));
 	}
 	private  void createDummyData(){
 		CreateUserRequest user1 = new CreateUserRequest("Kamil","Kamil_user","pass", Set.of(Role.ROLE_USER));
