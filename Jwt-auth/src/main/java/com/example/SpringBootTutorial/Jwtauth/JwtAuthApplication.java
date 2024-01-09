@@ -29,8 +29,12 @@ public class JwtAuthApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 //		createDummyData();
-//		System.out.println(securityProperties.getJwt().getPrivateKey());
-//		System.out.println(securityProperties.getJwt().getPublicKey());
+		System.out.println(securityProperties.getJwt().getPrivateKey());
+		System.out.println(securityProperties.getJwt().getPublicKey());
+
+		System.out.println("Prepared keys");
+		System.out.println(PublicAndPrivateKey.getPrivateKey());
+		System.out.println(PublicAndPrivateKey.getPublicKey());
 
 
 
