@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,13 +24,19 @@ public class AuthController {
     private final UserService userService;
     private final AccessTokenManager accessTokenManager;
     private final AuthenticationManager authenticationManager;
+    private final PasswordEncoder passwordEncoder;
     @PostMapping("/signIn")
     public String signIn(@RequestBody SearchUserDto searchUserDto){
 
+
+
+        log.info("INFO:");
+        System.out.println(passwordEncoder.matches("pass",userService.getUserByUsername(searchUserDto.username()).getPassword() ));
+        System.out.println(passwordEncoder.matches(searchUserDto.password(),userService.getUserByUsername(searchUserDto.username()).getPassword()));
+
         try {
             authenticationManager.authenticate(
-
-                    // authenticationManager calls authenticationprovider(DAO) it checks credentials for db
+                    // authenticationManager calls authenticationProvider(DAO) it checks credentials for db
 
                     //Learn:
                     // This checks there is any user with this credentials or not
@@ -48,7 +55,6 @@ public class AuthController {
           throw new RuntimeException(ex.getMessage());
 
         }
-
         System.out.println("AUTHENTICATE process succeed");
         System.out.println("Credentials are true");
 

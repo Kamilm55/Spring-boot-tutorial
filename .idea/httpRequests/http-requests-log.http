@@ -1,3 +1,143 @@
+POST http://localhost:8080/auth/signIn
+Content-Type: application/json
+Content-Length: 50
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username": "Kamil_user",
+  "password": "pass"
+}
+
+###
+
+POST http://localhost:8080/auth/signIn
+Content-Type: application/json
+Content-Length: 6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+}
+
+###
+
+POST http://localhost:8080/private/privateUser
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/auth/signIn
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "admin",
+  "password": "pass"
+}
+
+<> 2024-01-10T123321.200.txt
+
+###
+
+POST http://localhost:8080/auth/signIn
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "admin",
+  "password": "pass"
+}
+
+<> 2024-01-10T123313.200.txt
+
+###
+
+POST http://localhost:8080/auth/signIn
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "admin",
+  "password": "pass"
+}
+
+<> 2024-01-10T122649.200.txt
+
+###
+
+POST http://localhost:8080/auth/signIn
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "admin",
+  "password": "pass"
+}
+
+<> 2024-01-10T122547.200.txt
+
+###
+
+POST http://localhost:8080/auth/signIn
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "admin",
+  "password": "pass"
+}
+
+<> 2024-01-10T122427.200.txt
+
+###
+
+POST http://localhost:8080/auth/signIn
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0B67A7509E1609DB2F4C3875BF532D8B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "admin",
+  "password": "pass"
+}
+
+<> 2024-01-10T122212.200.txt
+
+###
+
 POST http://localhost:8080/private/privateUser
 Content-Length: 0
 Connection: Keep-Alive
@@ -402,96 +542,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2023-09-16T203928.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samir@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203926.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samirsad@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203919.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samir@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203854.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samir@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203804.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samir@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203722.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samir@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203704.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samir@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203614.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samir@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203533.200.json
-
-###
-
-PUT http://localhost:8080/api/v1/students/2/update?new_name=Samire&new_email=Samir@gmail.com
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-09-16T203523.200.json
 
 ###
 

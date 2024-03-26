@@ -5,14 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SpringBootTutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SpringBootTutorial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203523.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203533.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203614.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203704.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203722.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203804.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203854.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203919.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203926.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/JwtAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/JwtAuthApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/service/JwtTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/service/AccessTokenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/security/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/util/PublicAndPrivateKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/util/PublicAndPrivateKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/spring-progressbar/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sse-progressbar/spring-progressbar/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/spring-progressbar/src/main/java/spring/progressbar/demo/controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sse-progressbar/spring-progressbar/src/main/java/spring/progressbar/demo/controller/ProgressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/ProgressBarComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +64,12 @@
         <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/sse-progressbar" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1-sources.jar!/org/springframework/security/core/userdetails/User.java" root0="SKIP_INSPECTION" />
@@ -72,8 +110,8 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/Downloads/SpringBootTutorial/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/service",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/User/Downloads/SpringBootTutorial/sse-progressbar/spring-progressbar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,6 +119,7 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "spring.configuration.checksum": "014e4990eda7efadca95b88330e1187b",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -113,19 +152,26 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.JwtAuthApplication">
-    <configuration name="generated-requests | #21" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="21" requestIdentifier="#21" runType="Run single request">
+  <component name="RunManager" selected="Spring Boot.SpringProgressbarApplication">
+    <configuration name="generated-requests | #31" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="31" requestIdentifier="#31" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #26" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="26" requestIdentifier="#26" runType="Run single request">
+    <configuration name="generated-requests | #55" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="55" requestIdentifier="#55" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #27" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="27" requestIdentifier="#27" runType="Run single request">
+    <configuration name="generated-requests | #56" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="56" requestIdentifier="#56" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="BasicAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="basic-auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringBootTutorial.basicauth.BasicAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="chat" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibou.websocket.ChatApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,6 +197,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringProgressbarApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring-progressbar" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="spring.progressbar.demo.SpringProgressbarApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Jwt-auth: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -167,20 +221,22 @@
     </configuration>
     <list>
       <item itemvalue="Docker.Jwt-auth: Compose Deployment" />
-      <item itemvalue="HTTP Request.generated-requests | #26" />
-      <item itemvalue="HTTP Request.generated-requests | #27" />
-      <item itemvalue="HTTP Request.generated-requests | #21" />
+      <item itemvalue="HTTP Request.generated-requests | #55" />
+      <item itemvalue="HTTP Request.generated-requests | #56" />
+      <item itemvalue="HTTP Request.generated-requests | #31" />
+      <item itemvalue="Spring Boot.SpringProgressbarApplication" />
+      <item itemvalue="Spring Boot.ChatApplication" />
       <item itemvalue="Spring Boot.JwtAuthApplication" />
       <item itemvalue="Spring Boot.BasicAuthApplication" />
       <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Jwt-auth: Compose Deployment" />
-        <item itemvalue="HTTP Request.generated-requests | #27" />
-        <item itemvalue="HTTP Request.generated-requests | #26" />
         <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
-        <item itemvalue="HTTP Request.generated-requests | #21" />
+        <item itemvalue="HTTP Request.generated-requests | #56" />
+        <item itemvalue="HTTP Request.generated-requests | #55" />
+        <item itemvalue="HTTP Request.generated-requests | #31" />
+        <item itemvalue="Docker.Jwt-auth: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -256,12 +312,53 @@
       <workItem from="1704519631030" duration="579000" />
       <workItem from="1704642920452" duration="6675000" />
       <workItem from="1704812786458" duration="3655000" />
-      <workItem from="1704821056974" duration="8063000" />
+      <workItem from="1704821056974" duration="8185000" />
+      <workItem from="1704874664596" duration="1563000" />
+      <workItem from="1705160661875" duration="65000" />
+      <workItem from="1706558117081" duration="659000" />
+      <workItem from="1707493962702" duration="6154000" />
+      <workItem from="1707504256937" duration="1061000" />
+      <workItem from="1707671385794" duration="883000" />
+      <workItem from="1707672480156" duration="321000" />
+      <workItem from="1707745895770" duration="96000" />
+      <workItem from="1707760536937" duration="2522000" />
+      <workItem from="1707810220982" duration="61000" />
+      <workItem from="1708538813260" duration="1483000" />
+      <workItem from="1708625306735" duration="46000" />
+      <workItem from="1711137799670" duration="1495000" />
+      <workItem from="1711139335292" duration="5294000" />
+      <workItem from="1711180529520" duration="2997000" />
+      <workItem from="1711364945180" duration="107000" />
+      <workItem from="1711450000238" duration="8247000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-websocket" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
