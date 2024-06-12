@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/Jwt-auth/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-websocket-chat-app/pom.xml" />
         <option value="$PROJECT_DIR$/sse-progressbar/spring-progressbar/pom.xml" />
+        <option value="$PROJECT_DIR$/Redis_Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis-example/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -5,27 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41d6dff-0941-463a-911b-43e35c77e2cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SpringBootTutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SpringBootTutorial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203523.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203533.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203614.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203704.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203722.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203804.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203854.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203919.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-09-16T203926.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt-auth/src/main/java/com/example/SpringBootTutorial/Jwtauth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootTutorial/JPAPRACTICE/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-redis-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-redis-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-redis-example/src/main/java/com/bezkoder/spring/redis/SpringBootRedisExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-redis-example/src/main/java/com/bezkoder/spring/redis/SpringBootRedisExampleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-redis-example/src/main/java/com/bezkoder/spring/redis/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-redis-example/src/main/java/com/bezkoder/spring/redis/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-redis-example/src/main/java/com/bezkoder/spring/redis/controller/TutorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-redis-example/src/main/java/com/bezkoder/spring/redis/controller/TutorialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-redis-example/src/main/java/com/bezkoder/spring/redis/service/TutorialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-redis-example/src/main/java/com/bezkoder/spring/redis/service/TutorialService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-progressbar" beforeDir="false" afterPath="$PROJECT_DIR$/sse-progressbar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sse-progressbar/spring-progressbar/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sse-progressbar/spring-progressbar/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sse-progressbar/spring-progressbar/src/main/java/spring/progressbar/demo/controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sse-progressbar/spring-progressbar/src/main/java/spring/progressbar/demo/controller/ProgressController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/.gitignore" beforeDir="false" />
@@ -48,8 +39,6 @@
       <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/reportWebVitals.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/src/setupTests.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sse-progressbar/sse-progressbar-client/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SpringBootTutorial/JPAPRACTICE/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +52,13 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Record" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/sse-progressbar" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/spring-boot-redis-example" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1-sources.jar!/org/springframework/security/core/userdetails/User.java" root0="SKIP_INSPECTION" />
@@ -111,13 +100,14 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/User/Downloads/SpringBootTutorial/sse-progressbar/spring-progressbar",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "C:/Users/User/Downloads/SpringBootTutorial/spring-boot-redis-example",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "preferences.toDoOptions",
     "spring.configuration.checksum": "014e4990eda7efadca95b88330e1187b",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
@@ -130,7 +120,12 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.practice.payload" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Downloads\SpringBootTutorial\Practice\src\main\java\com\example\practice\response" />
+      <recent name="C:\Users\User\Downloads\SpringBootTutorial\sse-progressbar\sse-client\src" />
       <recent name="C:\Users\User\Downloads\SpringBootTutorial\Jwt-auth\src\main\java\com\example\SpringBootTutorial\Jwtauth\service" />
       <recent name="C:\Users\User\Downloads\SpringBootTutorial\Jwt-auth\src\main\java\com\example\SpringBootTutorial\Jwtauth" />
       <recent name="C:\Users\User\Downloads\SpringBootTutorial\basic-auth\src\main\java\com\example\SpringBootTutorial\basicauth" />
@@ -139,10 +134,14 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Downloads\SpringBootTutorial\Redis_Demo" />
       <recent name="C:\Users\User\Downloads\SpringBootTutorial" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.SpringBootTutorial.JPAPRACTICE" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bezkoder.spring.redis.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,13 +151,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringProgressbarApplication">
-    <configuration name="generated-requests | #31" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="31" requestIdentifier="#31" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #55" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="55" requestIdentifier="#55" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.SpringBootRedisExampleApplication">
     <configuration name="generated-requests | #56" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="56" requestIdentifier="#56" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -179,6 +172,33 @@
     <configuration name="JwtAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Jwt-auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringBootTutorial.Jwtauth.JwtAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.practice.Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.redis_demo.RedisDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootRedisExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-boot-redis-example" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bezkoder.spring.redis.SpringBootRedisExampleApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,10 +225,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Jwt-auth: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="Redis_Demo: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="sourceFilePath" value="Jwt-auth/docker-compose.yml" />
+          <option name="sourceFilePath" value="Redis_Demo/docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
@@ -219,24 +239,34 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="src: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="Redis_Demo/src/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Docker.Jwt-auth: Compose Deployment" />
-      <item itemvalue="HTTP Request.generated-requests | #55" />
+      <item itemvalue="Docker.Redis_Demo: Compose Deployment" />
+      <item itemvalue="Docker.src: Compose Deployment" />
       <item itemvalue="HTTP Request.generated-requests | #56" />
-      <item itemvalue="HTTP Request.generated-requests | #31" />
+      <item itemvalue="Spring Boot.SpringBootRedisExampleApplication" />
+      <item itemvalue="Spring Boot.RedisDemoApplication" />
       <item itemvalue="Spring Boot.SpringProgressbarApplication" />
       <item itemvalue="Spring Boot.ChatApplication" />
       <item itemvalue="Spring Boot.JwtAuthApplication" />
       <item itemvalue="Spring Boot.BasicAuthApplication" />
+      <item itemvalue="Spring Boot.Practice" />
       <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Practice" />
+        <item itemvalue="Docker.Redis_Demo: Compose Deployment" />
+        <item itemvalue="Docker.src: Compose Deployment" />
         <item itemvalue="Spring Boot.SpringBootTutorialApplication" />
         <item itemvalue="HTTP Request.generated-requests | #56" />
-        <item itemvalue="HTTP Request.generated-requests | #55" />
-        <item itemvalue="HTTP Request.generated-requests | #31" />
-        <item itemvalue="Docker.Jwt-auth: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +359,15 @@
       <workItem from="1711139335292" duration="5294000" />
       <workItem from="1711180529520" duration="2997000" />
       <workItem from="1711364945180" duration="107000" />
-      <workItem from="1711450000238" duration="8247000" />
+      <workItem from="1711450000238" duration="11115000" />
+      <workItem from="1711508433114" duration="3400000" />
+      <workItem from="1717589068906" duration="604000" />
+      <workItem from="1717593262504" duration="738000" />
+      <workItem from="1717599998080" duration="3188000" />
+      <workItem from="1717668148592" duration="666000" />
+      <workItem from="1717668841246" duration="3154000" />
+      <workItem from="1717672358632" duration="93000" />
+      <workItem from="1718180837624" duration="4276000" />
     </task>
     <servers />
   </component>

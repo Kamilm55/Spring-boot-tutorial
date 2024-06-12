@@ -10,19 +10,23 @@
         <module name="SpringBootTutorial" />
         <module name="Jwt-auth" />
         <module name="spring-progressbar" />
+        <module name="spring-boot-redis-example" />
         <module name="basic-auth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="chat" target="17" />
+      <module name="Practice" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Jwt-auth" options="-parameters" />
+      <module name="Practice" options="-parameters" />
       <module name="SpringBootTutorial" options="-parameters" />
       <module name="basic-auth" options="-parameters" />
       <module name="chat" options="-parameters" />
+      <module name="spring-boot-redis-example" options="-parameters" />
       <module name="spring-progressbar" options="-parameters" />
     </option>
   </component>
